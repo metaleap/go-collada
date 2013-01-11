@@ -1,77 +1,5 @@
 
-func load_FxCreateCubeInitFrom(xn *xmlx.Node, obj *cdom.FxCreateCubeInitFrom) {
-
-}
-
-func load_CameraOrthographic(xn *xmlx.Node, obj *cdom.CameraOrthographic) {
-
-}
-
-func load_Float2x4(xn *xmlx.Node, obj *cdom.Float2x4) {
-
-}
-
-func load_FxImageInitFrom(xn *xmlx.Node, obj *cdom.FxImageInitFrom) {
-
-}
-
-func load_Float3(xn *xmlx.Node, obj *cdom.Float3) {
-
-}
-
-func load_KxArticulatedSystemDef(xn *xmlx.Node, obj *cdom.KxArticulatedSystemDef) {
-
-}
-
-func load_PxRigidBodyDef(xn *xmlx.Node, obj *cdom.PxRigidBodyDef) {
-
-}
-
-func load_FxPassProgramBindAttribute(xn *xmlx.Node, obj *cdom.FxPassProgramBindAttribute) {
-
-}
-
-func load_VisualSceneEvaluation(xn *xmlx.Node, obj *cdom.VisualSceneEvaluation) {
-
-}
-
-func load_GeometryBrepEdges(xn *xmlx.Node, obj *cdom.GeometryBrepEdges) {
-
-}
-
-func load_GeometryBrepCylinder(xn *xmlx.Node, obj *cdom.GeometryBrepCylinder) {
-
-}
-
-func load_KxJointDef(xn *xmlx.Node, obj *cdom.KxJointDef) {
-
-}
-
-func load_GeometryBrepEllipse(xn *xmlx.Node, obj *cdom.GeometryBrepEllipse) {
-
-}
-
-func load_GeometryBrepShells(xn *xmlx.Node, obj *cdom.GeometryBrepShells) {
-
-}
-
-func load_VisualSceneRendering(xn *xmlx.Node, obj *cdom.VisualSceneRendering) {
-
-}
-
-func load_FxCreateFormatHint(xn *xmlx.Node, obj *cdom.FxCreateFormatHint) {
-
-}
-
-func load_Int4x4(xn *xmlx.Node, obj *cdom.Int4x4) {
-
-}
-
-func load_AssetContributor(xn *xmlx.Node, obj *cdom.AssetContributor) {
-
-}
-
-func load_FxBinding(xn *xmlx.Node, obj *cdom.FxBinding) {
+func load_GeometryBrepOrientation(xn *xmlx.Node, obj *cdom.GeometryBrepOrientation) {
 
 }
 
@@ -79,59 +7,7 @@ func load_FxMaterialInst(xn *xmlx.Node, obj *cdom.FxMaterialInst) {
 
 }
 
-func load_GeometryBrepSurfaces(xn *xmlx.Node, obj *cdom.GeometryBrepSurfaces) {
-
-}
-
-func load_FxParamDef(xn *xmlx.Node, obj *cdom.FxParamDef) {
-
-}
-
-func load_Float3x4(xn *xmlx.Node, obj *cdom.Float3x4) {
-
-}
-
-func load_KxSceneDef(xn *xmlx.Node, obj *cdom.KxSceneDef) {
-
-}
-
-func load_FxCreate3DInitFrom(xn *xmlx.Node, obj *cdom.FxCreate3DInitFrom) {
-
-}
-
-func load_Asset(xn *xmlx.Node, obj *cdom.Asset) {
-
-}
-
-func load_ParamOrRefSid(xn *xmlx.Node, obj *cdom.ParamOrRefSid) {
-
-}
-
-func load_FormulaDef(xn *xmlx.Node, obj *cdom.FormulaDef) {
-
-}
-
-func load_GeometryBrepWires(xn *xmlx.Node, obj *cdom.GeometryBrepWires) {
-
-}
-
-func load_NodeDef(xn *xmlx.Node, obj *cdom.NodeDef) {
-
-}
-
-func load_FxTechnique(xn *xmlx.Node, obj *cdom.FxTechnique) {
-
-}
-
-func load_GeometryInst(xn *xmlx.Node, obj *cdom.GeometryInst) {
-
-}
-
-func load_CameraPerspective(xn *xmlx.Node, obj *cdom.CameraPerspective) {
-
-}
-
-func load_ParamDefs(xn *xmlx.Node, obj *cdom.ParamDefs) {
+func load_FxFormatPrecision(xn *xmlx.Node, obj *cdom.FxFormatPrecision) {
 
 }
 
@@ -139,71 +15,19 @@ func load_GeometryPolygonHole(xn *xmlx.Node, obj *cdom.GeometryPolygonHole) {
 
 }
 
-func load_KxArticulatedSystemInst(xn *xmlx.Node, obj *cdom.KxArticulatedSystemInst) {
+func load_KxJointDef(xn *xmlx.Node, obj *cdom.KxJointDef) {
 
 }
 
-func load_FxShaderStage(xn *xmlx.Node, obj *cdom.FxShaderStage) {
+func load_FxFilterKind(xn *xmlx.Node, obj *cdom.FxFilterKind) {
 
 }
 
-func load_PxMaterialInst(xn *xmlx.Node, obj *cdom.PxMaterialInst) {
+func load_GeometryBrepCircle(xn *xmlx.Node, obj *cdom.GeometryBrepCircle) {
 
 }
 
-func load_CameraDef(xn *xmlx.Node, obj *cdom.CameraDef) {
-
-}
-
-func load_FxPassEvaluationClearDepth(xn *xmlx.Node, obj *cdom.FxPassEvaluationClearDepth) {
-
-}
-
-func load_Float3x2(xn *xmlx.Node, obj *cdom.Float3x2) {
-
-}
-
-func load_SidBool(xn *xmlx.Node, obj *cdom.SidBool) {
-
-}
-
-func load_GeometryBrepLine(xn *xmlx.Node, obj *cdom.GeometryBrepLine) {
-
-}
-
-func load_AssetGeographicLocation(xn *xmlx.Node, obj *cdom.AssetGeographicLocation) {
-
-}
-
-func load_GeometryPrimitives(xn *xmlx.Node, obj *cdom.GeometryPrimitives) {
-
-}
-
-func load_KxAttachment(xn *xmlx.Node, obj *cdom.KxAttachment) {
-
-}
-
-func load_GeometryMesh(xn *xmlx.Node, obj *cdom.GeometryMesh) {
-
-}
-
-func load_PxMaterialDef(xn *xmlx.Node, obj *cdom.PxMaterialDef) {
-
-}
-
-func load_SidVec3(xn *xmlx.Node, obj *cdom.SidVec3) {
-
-}
-
-func load_VisualSceneInst(xn *xmlx.Node, obj *cdom.VisualSceneInst) {
-
-}
-
-func load_FxEffectInst(xn *xmlx.Node, obj *cdom.FxEffectInst) {
-
-}
-
-func load_Float4x4(xn *xmlx.Node, obj *cdom.Float4x4) {
+func load_ControllerInputs(xn *xmlx.Node, obj *cdom.ControllerInputs) {
 
 }
 
@@ -211,103 +35,11 @@ func load_FxInitFrom(xn *xmlx.Node, obj *cdom.FxInitFrom) {
 
 }
 
-func load_FxParamDefs(xn *xmlx.Node, obj *cdom.FxParamDefs) {
+func load_Asset(xn *xmlx.Node, obj *cdom.Asset) {
 
 }
 
-func load_FxEffectInstTechniqueHint(xn *xmlx.Node, obj *cdom.FxEffectInstTechniqueHint) {
-
-}
-
-func load_Param(xn *xmlx.Node, obj *cdom.Param) {
-
-}
-
-func load_FxTextureOpaque(xn *xmlx.Node, obj *cdom.FxTextureOpaque) {
-
-}
-
-func load_IndexedInputs(xn *xmlx.Node, obj *cdom.IndexedInputs) {
-
-}
-
-func load_KxAxisIndex(xn *xmlx.Node, obj *cdom.KxAxisIndex) {
-
-}
-
-func load_FxPassProgramShader(xn *xmlx.Node, obj *cdom.FxPassProgramShader) {
-
-}
-
-func load_FxPassEvaluation(xn *xmlx.Node, obj *cdom.FxPassEvaluation) {
-
-}
-
-func load_PxRigidBodyCommon(xn *xmlx.Node, obj *cdom.PxRigidBodyCommon) {
-
-}
-
-func load_GeometryBrepCurves(xn *xmlx.Node, obj *cdom.GeometryBrepCurves) {
-
-}
-
-func load_FxPassState(xn *xmlx.Node, obj *cdom.FxPassState) {
-
-}
-
-func load_KxLink(xn *xmlx.Node, obj *cdom.KxLink) {
-
-}
-
-func load_InputShared(xn *xmlx.Node, obj *cdom.InputShared) {
-
-}
-
-func load_Input(xn *xmlx.Node, obj *cdom.Input) {
-
-}
-
-func load_GeometryVertices(xn *xmlx.Node, obj *cdom.GeometryVertices) {
-
-}
-
-func load_GeometryBrepCurve(xn *xmlx.Node, obj *cdom.GeometryBrepCurve) {
-
-}
-
-func load_AnimationChannel(xn *xmlx.Node, obj *cdom.AnimationChannel) {
-
-}
-
-func load_Float2(xn *xmlx.Node, obj *cdom.Float2) {
-
-}
-
-func load_AnimationSampler(xn *xmlx.Node, obj *cdom.AnimationSampler) {
-
-}
-
-func load_MaterialBinding(xn *xmlx.Node, obj *cdom.MaterialBinding) {
-
-}
-
-func load_FxColor(xn *xmlx.Node, obj *cdom.FxColor) {
-
-}
-
-func load_KxAttachmentKind(xn *xmlx.Node, obj *cdom.KxAttachmentKind) {
-
-}
-
-func load_GeometryBrepTorus(xn *xmlx.Node, obj *cdom.GeometryBrepTorus) {
-
-}
-
-func load_GeometryBrepSurfaceCurves(xn *xmlx.Node, obj *cdom.GeometryBrepSurfaceCurves) {
-
-}
-
-func load_PxRigidConstraintLimit(xn *xmlx.Node, obj *cdom.PxRigidConstraintLimit) {
+func load_LightPoint(xn *xmlx.Node, obj *cdom.LightPoint) {
 
 }
 
@@ -315,159 +47,7 @@ func load_GeometryBrepSphere(xn *xmlx.Node, obj *cdom.GeometryBrepSphere) {
 
 }
 
-func load_KxFrameTcp(xn *xmlx.Node, obj *cdom.KxFrameTcp) {
-
-}
-
-func load_GeometryBrepHyperbola(xn *xmlx.Node, obj *cdom.GeometryBrepHyperbola) {
-
-}
-
-func load_KxFrameObject(xn *xmlx.Node, obj *cdom.KxFrameObject) {
-
-}
-
-func load_AnimationClipInst(xn *xmlx.Node, obj *cdom.AnimationClipInst) {
-
-}
-
-func load_Int3(xn *xmlx.Node, obj *cdom.Int3) {
-
-}
-
-func load_FxProfileCommon(xn *xmlx.Node, obj *cdom.FxProfileCommon) {
-
-}
-
-func load_FxSamplerKind(xn *xmlx.Node, obj *cdom.FxSamplerKind) {
-
-}
-
-func load_ParamDef(xn *xmlx.Node, obj *cdom.ParamDef) {
-
-}
-
-func load_FxSampler(xn *xmlx.Node, obj *cdom.FxSampler) {
-
-}
-
-func load_Source(xn *xmlx.Node, obj *cdom.Source) {
-
-}
-
-func load_FxCreate2DSizeRatio(xn *xmlx.Node, obj *cdom.FxCreate2DSizeRatio) {
-
-}
-
-func load_AnimSamplerBehavior(xn *xmlx.Node, obj *cdom.AnimSamplerBehavior) {
-
-}
-
-func load_FxColorOrTexture(xn *xmlx.Node, obj *cdom.FxColorOrTexture) {
-
-}
-
-func load_PxCylinder(xn *xmlx.Node, obj *cdom.PxCylinder) {
-
-}
-
-func load_SidFloat(xn *xmlx.Node, obj *cdom.SidFloat) {
-
-}
-
-func load_Int2(xn *xmlx.Node, obj *cdom.Int2) {
-
-}
-
-func load_LightInst(xn *xmlx.Node, obj *cdom.LightInst) {
-
-}
-
-func load_AnimationClipDef(xn *xmlx.Node, obj *cdom.AnimationClipDef) {
-
-}
-
-func load_Float2x2(xn *xmlx.Node, obj *cdom.Float2x2) {
-
-}
-
-func load_KxFrame(xn *xmlx.Node, obj *cdom.KxFrame) {
-
-}
-
-func load_FxFormatRange(xn *xmlx.Node, obj *cdom.FxFormatRange) {
-
-}
-
-func load_FxTechniqueKind(xn *xmlx.Node, obj *cdom.FxTechniqueKind) {
-
-}
-
-func load_FxTexture(xn *xmlx.Node, obj *cdom.FxTexture) {
-
-}
-
-func load_KxFrameOrigin(xn *xmlx.Node, obj *cdom.KxFrameOrigin) {
-
-}
-
-func load_GeometryBrepSurface(xn *xmlx.Node, obj *cdom.GeometryBrepSurface) {
-
-}
-
-func load_ParamInsts(xn *xmlx.Node, obj *cdom.ParamInsts) {
-
-}
-
-func load_GeometryBrepCone(xn *xmlx.Node, obj *cdom.GeometryBrepCone) {
-
-}
-
-func load_KxBinding(xn *xmlx.Node, obj *cdom.KxBinding) {
-
-}
-
-func load_PxForceFieldDef(xn *xmlx.Node, obj *cdom.PxForceFieldDef) {
-
-}
-
-func load_Transform(xn *xmlx.Node, obj *cdom.Transform) {
-
-}
-
-func load_GeometryBrepPcurves(xn *xmlx.Node, obj *cdom.GeometryBrepPcurves) {
-
-}
-
-func load_FxPassEvaluationClearColor(xn *xmlx.Node, obj *cdom.FxPassEvaluationClearColor) {
-
-}
-
-func load_Int2x2(xn *xmlx.Node, obj *cdom.Int2x2) {
-
-}
-
-func load_FxAnnotation(xn *xmlx.Node, obj *cdom.FxAnnotation) {
-
-}
-
-func load_Layers(xn *xmlx.Node, obj *cdom.Layers) {
-
-}
-
-func load_Bool4(xn *xmlx.Node, obj *cdom.Bool4) {
-
-}
-
-func load_FxPassProgram(xn *xmlx.Node, obj *cdom.FxPassProgram) {
-
-}
-
-func load_FxPassEvaluationClearStencil(xn *xmlx.Node, obj *cdom.FxPassEvaluationClearStencil) {
-
-}
-
-func load_AnimationInst(xn *xmlx.Node, obj *cdom.AnimationInst) {
+func load_KxMotionSystem(xn *xmlx.Node, obj *cdom.KxMotionSystem) {
 
 }
 
@@ -475,15 +55,19 @@ func load_KxEffector(xn *xmlx.Node, obj *cdom.KxEffector) {
 
 }
 
+func load_CameraOptics(xn *xmlx.Node, obj *cdom.CameraOptics) {
+
+}
+
 func load_KxJointAxisBinding(xn *xmlx.Node, obj *cdom.KxJointAxisBinding) {
 
 }
 
-func load_KxAxisLimits(xn *xmlx.Node, obj *cdom.KxAxisLimits) {
+func load_KxMotionAxis(xn *xmlx.Node, obj *cdom.KxMotionAxis) {
 
 }
 
-func load_Technique(xn *xmlx.Node, obj *cdom.Technique) {
+func load_FxTextureOpaque(xn *xmlx.Node, obj *cdom.FxTextureOpaque) {
 
 }
 
@@ -491,15 +75,219 @@ func load_Float7(xn *xmlx.Node, obj *cdom.Float7) {
 
 }
 
+func load_FxCreateMips(xn *xmlx.Node, obj *cdom.FxCreateMips) {
+
+}
+
+func load_KxLink(xn *xmlx.Node, obj *cdom.KxLink) {
+
+}
+
+func load_FxEffectInst(xn *xmlx.Node, obj *cdom.FxEffectInst) {
+
+}
+
+func load_MaterialBinding(xn *xmlx.Node, obj *cdom.MaterialBinding) {
+
+}
+
+func load_PxRigidConstraintDef(xn *xmlx.Node, obj *cdom.PxRigidConstraintDef) {
+
+}
+
+func load_VisualSceneRendering(xn *xmlx.Node, obj *cdom.VisualSceneRendering) {
+
+}
+
+func load_InputShared(xn *xmlx.Node, obj *cdom.InputShared) {
+
+}
+
+func load_FxVertexInputBinding(xn *xmlx.Node, obj *cdom.FxVertexInputBinding) {
+
+}
+
+func load_Float2x2(xn *xmlx.Node, obj *cdom.Float2x2) {
+
+}
+
+func load_CameraOrthographic(xn *xmlx.Node, obj *cdom.CameraOrthographic) {
+
+}
+
+func load_PxRigidBodyInst(xn *xmlx.Node, obj *cdom.PxRigidBodyInst) {
+
+}
+
+func load_FxCreateCubeInitFrom(xn *xmlx.Node, obj *cdom.FxCreateCubeInitFrom) {
+
+}
+
+func load_GeometryMesh(xn *xmlx.Node, obj *cdom.GeometryMesh) {
+
+}
+
+func load_GeometryBrepCylinder(xn *xmlx.Node, obj *cdom.GeometryBrepCylinder) {
+
+}
+
+func load_FxPassEvaluationClearStencil(xn *xmlx.Node, obj *cdom.FxPassEvaluationClearStencil) {
+
+}
+
+func load_FxCreateFormat(xn *xmlx.Node, obj *cdom.FxCreateFormat) {
+
+}
+
+func load_KxModelBinding(xn *xmlx.Node, obj *cdom.KxModelBinding) {
+
+}
+
+func load_FxPassProgramShader(xn *xmlx.Node, obj *cdom.FxPassProgramShader) {
+
+}
+
+func load_Float4x4(xn *xmlx.Node, obj *cdom.Float4x4) {
+
+}
+
+func load_Param(xn *xmlx.Node, obj *cdom.Param) {
+
+}
+
+func load_ParamOrInt(xn *xmlx.Node, obj *cdom.ParamOrInt) {
+
+}
+
+func load_AssetGeographicLocation(xn *xmlx.Node, obj *cdom.AssetGeographicLocation) {
+
+}
+
+func load_ControllerSkin(xn *xmlx.Node, obj *cdom.ControllerSkin) {
+
+}
+
+func load_AssetContributor(xn *xmlx.Node, obj *cdom.AssetContributor) {
+
+}
+
+func load_VisualSceneInst(xn *xmlx.Node, obj *cdom.VisualSceneInst) {
+
+}
+
+func load_KxFrame(xn *xmlx.Node, obj *cdom.KxFrame) {
+
+}
+
+func load_PxRigidConstraintDefs(xn *xmlx.Node, obj *cdom.PxRigidConstraintDefs) {
+
+}
+
+func load_PxSceneInst(xn *xmlx.Node, obj *cdom.PxSceneInst) {
+
+}
+
+func load_Float2x3(xn *xmlx.Node, obj *cdom.Float2x3) {
+
+}
+
+func load_GeometryBrepWires(xn *xmlx.Node, obj *cdom.GeometryBrepWires) {
+
+}
+
+func load_LightAmbient(xn *xmlx.Node, obj *cdom.LightAmbient) {
+
+}
+
+func load_GeometryBrepNurbs(xn *xmlx.Node, obj *cdom.GeometryBrepNurbs) {
+
+}
+
+func load_SourceArray(xn *xmlx.Node, obj *cdom.SourceArray) {
+
+}
+
+func load_CameraInst(xn *xmlx.Node, obj *cdom.CameraInst) {
+
+}
+
+func load_PxCylinder(xn *xmlx.Node, obj *cdom.PxCylinder) {
+
+}
+
+func load_KxFrameTcp(xn *xmlx.Node, obj *cdom.KxFrameTcp) {
+
+}
+
+func load_Int2x2(xn *xmlx.Node, obj *cdom.Int2x2) {
+
+}
+
+func load_GeometryBrepEdges(xn *xmlx.Node, obj *cdom.GeometryBrepEdges) {
+
+}
+
+func load_AnimSamplerBehavior(xn *xmlx.Node, obj *cdom.AnimSamplerBehavior) {
+
+}
+
+func load_Input(xn *xmlx.Node, obj *cdom.Input) {
+
+}
+
+func load_FxPass(xn *xmlx.Node, obj *cdom.FxPass) {
+
+}
+
+func load_GeometryBrepSweptSurface(xn *xmlx.Node, obj *cdom.GeometryBrepSweptSurface) {
+
+}
+
+func load_KxFrameTip(xn *xmlx.Node, obj *cdom.KxFrameTip) {
+
+}
+
+func load_GeometryBrepPlane(xn *xmlx.Node, obj *cdom.GeometryBrepPlane) {
+
+}
+
+func load_FxSamplerKind(xn *xmlx.Node, obj *cdom.FxSamplerKind) {
+
+}
+
+func load_KxJointInst(xn *xmlx.Node, obj *cdom.KxJointInst) {
+
+}
+
+func load_GeometryBrepPcurves(xn *xmlx.Node, obj *cdom.GeometryBrepPcurves) {
+
+}
+
+func load_Technique(xn *xmlx.Node, obj *cdom.Technique) {
+
+}
+
+func load_GeometryBrepSurfaceCurves(xn *xmlx.Node, obj *cdom.GeometryBrepSurfaceCurves) {
+
+}
+
+func load_Float2x4(xn *xmlx.Node, obj *cdom.Float2x4) {
+
+}
+
+func load_FxCreate3D(xn *xmlx.Node, obj *cdom.FxCreate3D) {
+
+}
+
+func load_SidVec3(xn *xmlx.Node, obj *cdom.SidVec3) {
+
+}
+
 func load_PxRigidConstraintAttachment(xn *xmlx.Node, obj *cdom.PxRigidConstraintAttachment) {
 
 }
 
-func load_SourceAccessor(xn *xmlx.Node, obj *cdom.SourceAccessor) {
-
-}
-
-func load_GeometryBrepParabola(xn *xmlx.Node, obj *cdom.GeometryBrepParabola) {
+func load_PxModelDef(xn *xmlx.Node, obj *cdom.PxModelDef) {
 
 }
 
@@ -507,7 +295,7 @@ func load_Bool3(xn *xmlx.Node, obj *cdom.Bool3) {
 
 }
 
-func load_LightSpot(xn *xmlx.Node, obj *cdom.LightSpot) {
+func load_GeometryBrepParabola(xn *xmlx.Node, obj *cdom.GeometryBrepParabola) {
 
 }
 
@@ -519,383 +307,11 @@ func load_SidString(xn *xmlx.Node, obj *cdom.SidString) {
 
 }
 
-func load_FxSamplerWrapping(xn *xmlx.Node, obj *cdom.FxSamplerWrapping) {
+func load_LightSpot(xn *xmlx.Node, obj *cdom.LightSpot) {
 
 }
 
-func load_ParamOrUint(xn *xmlx.Node, obj *cdom.ParamOrUint) {
-
-}
-
-func load_LightDirectional(xn *xmlx.Node, obj *cdom.LightDirectional) {
-
-}
-
-func load_CameraImager(xn *xmlx.Node, obj *cdom.CameraImager) {
-
-}
-
-func load_FxSamplerStates(xn *xmlx.Node, obj *cdom.FxSamplerStates) {
-
-}
-
-func load_GeometryDef(xn *xmlx.Node, obj *cdom.GeometryDef) {
-
-}
-
-func load_FxProfile(xn *xmlx.Node, obj *cdom.FxProfile) {
-
-}
-
-func load_FxTechniqueCommon(xn *xmlx.Node, obj *cdom.FxTechniqueCommon) {
-
-}
-
-func load_PxRigidConstraintSpring(xn *xmlx.Node, obj *cdom.PxRigidConstraintSpring) {
-
-}
-
-func load_FxWrapKind(xn *xmlx.Node, obj *cdom.FxWrapKind) {
-
-}
-
-func load_FormulaInst(xn *xmlx.Node, obj *cdom.FormulaInst) {
-
-}
-
-func load_FxFilterKind(xn *xmlx.Node, obj *cdom.FxFilterKind) {
-
-}
-
-func load_ParamOrInt(xn *xmlx.Node, obj *cdom.ParamOrInt) {
-
-}
-
-func load_FxImageDef(xn *xmlx.Node, obj *cdom.FxImageDef) {
-
-}
-
-func load_GeometryBrepFaces(xn *xmlx.Node, obj *cdom.GeometryBrepFaces) {
-
-}
-
-func load_GeometryBrepNurbs(xn *xmlx.Node, obj *cdom.GeometryBrepNurbs) {
-
-}
-
-func load_KxModelInst(xn *xmlx.Node, obj *cdom.KxModelInst) {
-
-}
-
-func load_KxJoint(xn *xmlx.Node, obj *cdom.KxJoint) {
-
-}
-
-func load_Float4x2(xn *xmlx.Node, obj *cdom.Float4x2) {
-
-}
-
-func load_PxForceFieldInst(xn *xmlx.Node, obj *cdom.PxForceFieldInst) {
-
-}
-
-func load_FxProfileGlsl(xn *xmlx.Node, obj *cdom.FxProfileGlsl) {
-
-}
-
-func load_Float3x3(xn *xmlx.Node, obj *cdom.Float3x3) {
-
-}
-
-func load_Extra(xn *xmlx.Node, obj *cdom.Extra) {
-
-}
-
-func load_TransformKind(xn *xmlx.Node, obj *cdom.TransformKind) {
-
-}
-
-func load_PxRigidConstraintInst(xn *xmlx.Node, obj *cdom.PxRigidConstraintInst) {
-
-}
-
-func load_Float2x3(xn *xmlx.Node, obj *cdom.Float2x3) {
-
-}
-
-func load_GeometryBrepCapsule(xn *xmlx.Node, obj *cdom.GeometryBrepCapsule) {
-
-}
-
-func load_Float4(xn *xmlx.Node, obj *cdom.Float4) {
-
-}
-
-func load_GeometryBrepSweptSurface(xn *xmlx.Node, obj *cdom.GeometryBrepSweptSurface) {
-
-}
-
-func load_FxPassEvaluationTarget(xn *xmlx.Node, obj *cdom.FxPassEvaluationTarget) {
-
-}
-
-func load_KxSceneInst(xn *xmlx.Node, obj *cdom.KxSceneInst) {
-
-}
-
-func load_GeometrySpline(xn *xmlx.Node, obj *cdom.GeometrySpline) {
-
-}
-
-func load_PxSceneInst(xn *xmlx.Node, obj *cdom.PxSceneInst) {
-
-}
-
-func load_PxRigidConstraintDefs(xn *xmlx.Node, obj *cdom.PxRigidConstraintDefs) {
-
-}
-
-func load_KxMotionSystem(xn *xmlx.Node, obj *cdom.KxMotionSystem) {
-
-}
-
-func load_Int3x3(xn *xmlx.Node, obj *cdom.Int3x3) {
-
-}
-
-func load_KxMotionAxis(xn *xmlx.Node, obj *cdom.KxMotionAxis) {
-
-}
-
-func load_LightPoint(xn *xmlx.Node, obj *cdom.LightPoint) {
-
-}
-
-func load_SidFloat3(xn *xmlx.Node, obj *cdom.SidFloat3) {
-
-}
-
-func load_PxRigidConstraintDef(xn *xmlx.Node, obj *cdom.PxRigidConstraintDef) {
-
-}
-
-func load_AnimationDef(xn *xmlx.Node, obj *cdom.AnimationDef) {
-
-}
-
-func load_ParamOrFloat(xn *xmlx.Node, obj *cdom.ParamOrFloat) {
-
-}
-
-func load_Formula(xn *xmlx.Node, obj *cdom.Formula) {
-
-}
-
-func load_FxSamplerImage(xn *xmlx.Node, obj *cdom.FxSamplerImage) {
-
-}
-
-func load_PxRigidBodyDefs(xn *xmlx.Node, obj *cdom.PxRigidBodyDefs) {
-
-}
-
-func load_KxKinematicsSystem(xn *xmlx.Node, obj *cdom.KxKinematicsSystem) {
-
-}
-
-func load_GeometryBrepSolids(xn *xmlx.Node, obj *cdom.GeometryBrepSolids) {
-
-}
-
-func load_KxModelDef(xn *xmlx.Node, obj *cdom.KxModelDef) {
-
-}
-
-func load_ControllerSkin(xn *xmlx.Node, obj *cdom.ControllerSkin) {
-
-}
-
-func load_FxMaterialDef(xn *xmlx.Node, obj *cdom.FxMaterialDef) {
-
-}
-
-func load_LightAmbient(xn *xmlx.Node, obj *cdom.LightAmbient) {
-
-}
-
-func load_FxEffectDef(xn *xmlx.Node, obj *cdom.FxEffectDef) {
-
-}
-
-func load_FxFormatChannels(xn *xmlx.Node, obj *cdom.FxFormatChannels) {
-
-}
-
-func load_KxFrameTip(xn *xmlx.Node, obj *cdom.KxFrameTip) {
-
-}
-
-func load_ControllerInst(xn *xmlx.Node, obj *cdom.ControllerInst) {
-
-}
-
-func load_NodeInst(xn *xmlx.Node, obj *cdom.NodeInst) {
-
-}
-
-func load_GeometryPrimitiveKind(xn *xmlx.Node, obj *cdom.GeometryPrimitiveKind) {
-
-}
-
-func load_ChildNode(xn *xmlx.Node, obj *cdom.ChildNode) {
-
-}
-
-func load_FxCreate(xn *xmlx.Node, obj *cdom.FxCreate) {
-
-}
-
-func load_ControllerInputs(xn *xmlx.Node, obj *cdom.ControllerInputs) {
-
-}
-
-func load_ParamOrFloat2(xn *xmlx.Node, obj *cdom.ParamOrFloat2) {
-
-}
-
-func load_FxProfileGlslCodeInclude(xn *xmlx.Node, obj *cdom.FxProfileGlslCodeInclude) {
-
-}
-
-func load_KxModelBinding(xn *xmlx.Node, obj *cdom.KxModelBinding) {
-
-}
-
-func load_ControllerDef(xn *xmlx.Node, obj *cdom.ControllerDef) {
-
-}
-
-func load_Bool2(xn *xmlx.Node, obj *cdom.Bool2) {
-
-}
-
-func load_FxCreateMips(xn *xmlx.Node, obj *cdom.FxCreateMips) {
-
-}
-
-func load_ParamOrBool(xn *xmlx.Node, obj *cdom.ParamOrBool) {
-
-}
-
-func load_GeometryBrepPlane(xn *xmlx.Node, obj *cdom.GeometryBrepPlane) {
-
-}
-
-func load_FxPassProgramShaderSources(xn *xmlx.Node, obj *cdom.FxPassProgramShaderSources) {
-
-}
-
-func load_GeometryBrepNurbsSurface(xn *xmlx.Node, obj *cdom.GeometryBrepNurbsSurface) {
-
-}
-
-func load_ControllerMorph(xn *xmlx.Node, obj *cdom.ControllerMorph) {
-
-}
-
-func load_PxModelInst(xn *xmlx.Node, obj *cdom.PxModelInst) {
-
-}
-
-func load_LightDef(xn *xmlx.Node, obj *cdom.LightDef) {
-
-}
-
-func load_GeometryBrepOrientation(xn *xmlx.Node, obj *cdom.GeometryBrepOrientation) {
-
-}
-
-func load_KxKinematicsAxis(xn *xmlx.Node, obj *cdom.KxKinematicsAxis) {
-
-}
-
-func load_Sources(xn *xmlx.Node, obj *cdom.Sources) {
-
-}
-
-func load_CameraInst(xn *xmlx.Node, obj *cdom.CameraInst) {
-
-}
-
-func load_FxPass(xn *xmlx.Node, obj *cdom.FxPass) {
-
-}
-
-func load_KxJointInst(xn *xmlx.Node, obj *cdom.KxJointInst) {
-
-}
-
-func load_FxCreate2D(xn *xmlx.Node, obj *cdom.FxCreate2D) {
-
-}
-
-func load_SourceArray(xn *xmlx.Node, obj *cdom.SourceArray) {
-
-}
-
-func load_GeometryControlVertices(xn *xmlx.Node, obj *cdom.GeometryControlVertices) {
-
-}
-
-func load_FxCreateCube(xn *xmlx.Node, obj *cdom.FxCreateCube) {
-
-}
-
-func load_FxTechniqueGlsl(xn *xmlx.Node, obj *cdom.FxTechniqueGlsl) {
-
-}
-
-func load_GeometryPositioning(xn *xmlx.Node, obj *cdom.GeometryPositioning) {
-
-}
-
-func load_ParamOrSidFloat(xn *xmlx.Node, obj *cdom.ParamOrSidFloat) {
-
-}
-
-func load_Scene(xn *xmlx.Node, obj *cdom.Scene) {
-
-}
-
-func load_CameraOptics(xn *xmlx.Node, obj *cdom.CameraOptics) {
-
-}
-
-func load_FxCreate3D(xn *xmlx.Node, obj *cdom.FxCreate3D) {
-
-}
-
-func load_Int4(xn *xmlx.Node, obj *cdom.Int4) {
-
-}
-
-func load_FxPassProgramBindUniform(xn *xmlx.Node, obj *cdom.FxPassProgramBindUniform) {
-
-}
-
-func load_FxCreate2DSizeExact(xn *xmlx.Node, obj *cdom.FxCreate2DSizeExact) {
-
-}
-
-func load_ParamInst(xn *xmlx.Node, obj *cdom.ParamInst) {
-
-}
-
-func load_FxGlslTechniques(xn *xmlx.Node, obj *cdom.FxGlslTechniques) {
-
-}
-
-func load_GeometryBrepCircle(xn *xmlx.Node, obj *cdom.GeometryBrepCircle) {
+func load_ParamDef(xn *xmlx.Node, obj *cdom.ParamDef) {
 
 }
 
@@ -903,43 +319,39 @@ func load_PxSceneDef(xn *xmlx.Node, obj *cdom.PxSceneDef) {
 
 }
 
-func load_PxMaterial(xn *xmlx.Node, obj *cdom.PxMaterial) {
-
-}
-
-func load_FxCreateInitFrom(xn *xmlx.Node, obj *cdom.FxCreateInitFrom) {
-
-}
-
-func load_Float4x3(xn *xmlx.Node, obj *cdom.Float4x3) {
-
-}
-
-func load_GeometryBrepBox(xn *xmlx.Node, obj *cdom.GeometryBrepBox) {
-
-}
-
-func load_FxVertexInputBinding(xn *xmlx.Node, obj *cdom.FxVertexInputBinding) {
-
-}
-
-func load_FxFormatPrecision(xn *xmlx.Node, obj *cdom.FxFormatPrecision) {
-
-}
-
-func load_FxSamplerFiltering(xn *xmlx.Node, obj *cdom.FxSamplerFiltering) {
-
-}
-
-func load_FxCubeFace(xn *xmlx.Node, obj *cdom.FxCubeFace) {
-
-}
-
-func load_PxModelDef(xn *xmlx.Node, obj *cdom.PxModelDef) {
-
-}
-
 func load_FxImageInst(xn *xmlx.Node, obj *cdom.FxImageInst) {
+
+}
+
+func load_PxRigidBodyCommon(xn *xmlx.Node, obj *cdom.PxRigidBodyCommon) {
+
+}
+
+func load_NodeInst(xn *xmlx.Node, obj *cdom.NodeInst) {
+
+}
+
+func load_GeometryBrepLine(xn *xmlx.Node, obj *cdom.GeometryBrepLine) {
+
+}
+
+func load_KxAttachmentKind(xn *xmlx.Node, obj *cdom.KxAttachmentKind) {
+
+}
+
+func load_CameraImager(xn *xmlx.Node, obj *cdom.CameraImager) {
+
+}
+
+func load_FxTechniqueGlsl(xn *xmlx.Node, obj *cdom.FxTechniqueGlsl) {
+
+}
+
+func load_LightInst(xn *xmlx.Node, obj *cdom.LightInst) {
+
+}
+
+func load_Formula(xn *xmlx.Node, obj *cdom.Formula) {
 
 }
 
@@ -947,23 +359,79 @@ func load_LightAttenuation(xn *xmlx.Node, obj *cdom.LightAttenuation) {
 
 }
 
-func load_PxShape(xn *xmlx.Node, obj *cdom.PxShape) {
+func load_Bool4(xn *xmlx.Node, obj *cdom.Bool4) {
 
 }
 
-func load_GeometryBrep(xn *xmlx.Node, obj *cdom.GeometryBrep) {
+func load_FxImageDef(xn *xmlx.Node, obj *cdom.FxImageDef) {
 
 }
 
-func load_PxRigidBodyInst(xn *xmlx.Node, obj *cdom.PxRigidBodyInst) {
+func load_FormulaDef(xn *xmlx.Node, obj *cdom.FormulaDef) {
 
 }
 
-func load_VisualSceneRenderingMaterialInst(xn *xmlx.Node, obj *cdom.VisualSceneRenderingMaterialInst) {
+func load_KxArticulatedSystemDef(xn *xmlx.Node, obj *cdom.KxArticulatedSystemDef) {
 
 }
 
-func load_KxJointKind(xn *xmlx.Node, obj *cdom.KxJointKind) {
+func load_PxForceFieldDef(xn *xmlx.Node, obj *cdom.PxForceFieldDef) {
+
+}
+
+func load_FxSamplerFiltering(xn *xmlx.Node, obj *cdom.FxSamplerFiltering) {
+
+}
+
+func load_NodeDef(xn *xmlx.Node, obj *cdom.NodeDef) {
+
+}
+
+func load_CameraDef(xn *xmlx.Node, obj *cdom.CameraDef) {
+
+}
+
+func load_Float4x3(xn *xmlx.Node, obj *cdom.Float4x3) {
+
+}
+
+func load_ParamOrSidFloat(xn *xmlx.Node, obj *cdom.ParamOrSidFloat) {
+
+}
+
+func load_FxProfileGlsl(xn *xmlx.Node, obj *cdom.FxProfileGlsl) {
+
+}
+
+func load_Int3(xn *xmlx.Node, obj *cdom.Int3) {
+
+}
+
+func load_FormulaInst(xn *xmlx.Node, obj *cdom.FormulaInst) {
+
+}
+
+func load_ControllerDef(xn *xmlx.Node, obj *cdom.ControllerDef) {
+
+}
+
+func load_FxEffectDef(xn *xmlx.Node, obj *cdom.FxEffectDef) {
+
+}
+
+func load_FxMaterialDef(xn *xmlx.Node, obj *cdom.FxMaterialDef) {
+
+}
+
+func load_FxGlslTechniques(xn *xmlx.Node, obj *cdom.FxGlslTechniques) {
+
+}
+
+func load_Float2(xn *xmlx.Node, obj *cdom.Float2) {
+
+}
+
+func load_FxCreateInitFrom(xn *xmlx.Node, obj *cdom.FxCreateInitFrom) {
 
 }
 
@@ -971,10 +439,534 @@ func load_KxJointLimits(xn *xmlx.Node, obj *cdom.KxJointLimits) {
 
 }
 
-func load_FxCreateFormat(xn *xmlx.Node, obj *cdom.FxCreateFormat) {
+func load_FxEffectInstTechniqueHint(xn *xmlx.Node, obj *cdom.FxEffectInstTechniqueHint) {
+
+}
+
+func load_Float3x3(xn *xmlx.Node, obj *cdom.Float3x3) {
+
+}
+
+func load_ParamDefs(xn *xmlx.Node, obj *cdom.ParamDefs) {
+
+}
+
+func load_FxCreateFormatHint(xn *xmlx.Node, obj *cdom.FxCreateFormatHint) {
+
+}
+
+func load_SourceAccessor(xn *xmlx.Node, obj *cdom.SourceAccessor) {
+
+}
+
+func load_ParamInsts(xn *xmlx.Node, obj *cdom.ParamInsts) {
+
+}
+
+func load_ControllerMorph(xn *xmlx.Node, obj *cdom.ControllerMorph) {
+
+}
+
+func load_FxImageInitFrom(xn *xmlx.Node, obj *cdom.FxImageInitFrom) {
+
+}
+
+func load_GeometryVertices(xn *xmlx.Node, obj *cdom.GeometryVertices) {
+
+}
+
+func load_GeometryBrepTorus(xn *xmlx.Node, obj *cdom.GeometryBrepTorus) {
+
+}
+
+func load_FxTexture(xn *xmlx.Node, obj *cdom.FxTexture) {
+
+}
+
+func load_FxPassEvaluation(xn *xmlx.Node, obj *cdom.FxPassEvaluation) {
+
+}
+
+func load_ParamInst(xn *xmlx.Node, obj *cdom.ParamInst) {
+
+}
+
+func load_FxProfile(xn *xmlx.Node, obj *cdom.FxProfile) {
+
+}
+
+func load_FxPassProgramBindAttribute(xn *xmlx.Node, obj *cdom.FxPassProgramBindAttribute) {
+
+}
+
+func load_FxCreate2D(xn *xmlx.Node, obj *cdom.FxCreate2D) {
+
+}
+
+func load_ParamOrFloat2(xn *xmlx.Node, obj *cdom.ParamOrFloat2) {
+
+}
+
+func load_FxCreateCube(xn *xmlx.Node, obj *cdom.FxCreateCube) {
+
+}
+
+func load_KxBinding(xn *xmlx.Node, obj *cdom.KxBinding) {
+
+}
+
+func load_GeometryBrepBox(xn *xmlx.Node, obj *cdom.GeometryBrepBox) {
+
+}
+
+func load_Float4x2(xn *xmlx.Node, obj *cdom.Float4x2) {
+
+}
+
+func load_FxCreate3DInitFrom(xn *xmlx.Node, obj *cdom.FxCreate3DInitFrom) {
+
+}
+
+func load_FxCreate2DSizeExact(xn *xmlx.Node, obj *cdom.FxCreate2DSizeExact) {
+
+}
+
+func load_PxMaterialDef(xn *xmlx.Node, obj *cdom.PxMaterialDef) {
+
+}
+
+func load_AnimationDef(xn *xmlx.Node, obj *cdom.AnimationDef) {
+
+}
+
+func load_FxParamDef(xn *xmlx.Node, obj *cdom.FxParamDef) {
+
+}
+
+func load_ChildNode(xn *xmlx.Node, obj *cdom.ChildNode) {
+
+}
+
+func load_PxRigidBodyDefs(xn *xmlx.Node, obj *cdom.PxRigidBodyDefs) {
+
+}
+
+func load_FxSamplerImage(xn *xmlx.Node, obj *cdom.FxSamplerImage) {
+
+}
+
+func load_FxPassEvaluationClearColor(xn *xmlx.Node, obj *cdom.FxPassEvaluationClearColor) {
+
+}
+
+func load_Layers(xn *xmlx.Node, obj *cdom.Layers) {
+
+}
+
+func load_GeometryBrepFaces(xn *xmlx.Node, obj *cdom.GeometryBrepFaces) {
+
+}
+
+func load_FxCreate2DSizeRatio(xn *xmlx.Node, obj *cdom.FxCreate2DSizeRatio) {
+
+}
+
+func load_FxColor(xn *xmlx.Node, obj *cdom.FxColor) {
+
+}
+
+func load_FxParamDefs(xn *xmlx.Node, obj *cdom.FxParamDefs) {
+
+}
+
+func load_GeometryBrepCone(xn *xmlx.Node, obj *cdom.GeometryBrepCone) {
+
+}
+
+func load_LightDirectional(xn *xmlx.Node, obj *cdom.LightDirectional) {
+
+}
+
+func load_KxSceneInst(xn *xmlx.Node, obj *cdom.KxSceneInst) {
+
+}
+
+func load_FxSampler(xn *xmlx.Node, obj *cdom.FxSampler) {
+
+}
+
+func load_GeometryBrep(xn *xmlx.Node, obj *cdom.GeometryBrep) {
+
+}
+
+func load_FxTechnique(xn *xmlx.Node, obj *cdom.FxTechnique) {
+
+}
+
+func load_FxFormatRange(xn *xmlx.Node, obj *cdom.FxFormatRange) {
+
+}
+
+func load_Int4x4(xn *xmlx.Node, obj *cdom.Int4x4) {
+
+}
+
+func load_Sources(xn *xmlx.Node, obj *cdom.Sources) {
+
+}
+
+func load_FxTechniqueKind(xn *xmlx.Node, obj *cdom.FxTechniqueKind) {
+
+}
+
+func load_AnimationSampler(xn *xmlx.Node, obj *cdom.AnimationSampler) {
+
+}
+
+func load_FxCreate(xn *xmlx.Node, obj *cdom.FxCreate) {
+
+}
+
+func load_ParamOrBool(xn *xmlx.Node, obj *cdom.ParamOrBool) {
+
+}
+
+func load_KxFrameObject(xn *xmlx.Node, obj *cdom.KxFrameObject) {
+
+}
+
+func load_ParamOrFloat(xn *xmlx.Node, obj *cdom.ParamOrFloat) {
+
+}
+
+func load_ControllerInst(xn *xmlx.Node, obj *cdom.ControllerInst) {
+
+}
+
+func load_Float3x4(xn *xmlx.Node, obj *cdom.Float3x4) {
+
+}
+
+func load_Scene(xn *xmlx.Node, obj *cdom.Scene) {
+
+}
+
+func load_GeometryInst(xn *xmlx.Node, obj *cdom.GeometryInst) {
+
+}
+
+func load_IndexedInputs(xn *xmlx.Node, obj *cdom.IndexedInputs) {
+
+}
+
+func load_PxRigidConstraintSpring(xn *xmlx.Node, obj *cdom.PxRigidConstraintSpring) {
+
+}
+
+func load_GeometryBrepCapsule(xn *xmlx.Node, obj *cdom.GeometryBrepCapsule) {
+
+}
+
+func load_TransformKind(xn *xmlx.Node, obj *cdom.TransformKind) {
+
+}
+
+func load_PxMaterial(xn *xmlx.Node, obj *cdom.PxMaterial) {
+
+}
+
+func load_GeometryPrimitives(xn *xmlx.Node, obj *cdom.GeometryPrimitives) {
+
+}
+
+func load_Transform(xn *xmlx.Node, obj *cdom.Transform) {
+
+}
+
+func load_PxRigidBodyDef(xn *xmlx.Node, obj *cdom.PxRigidBodyDef) {
+
+}
+
+func load_KxArticulatedSystemInst(xn *xmlx.Node, obj *cdom.KxArticulatedSystemInst) {
+
+}
+
+func load_FxProfileGlslCodeInclude(xn *xmlx.Node, obj *cdom.FxProfileGlslCodeInclude) {
+
+}
+
+func load_GeometryDef(xn *xmlx.Node, obj *cdom.GeometryDef) {
+
+}
+
+func load_FxPassProgramShaderSources(xn *xmlx.Node, obj *cdom.FxPassProgramShaderSources) {
+
+}
+
+func load_VisualSceneEvaluation(xn *xmlx.Node, obj *cdom.VisualSceneEvaluation) {
+
+}
+
+func load_KxSceneDef(xn *xmlx.Node, obj *cdom.KxSceneDef) {
+
+}
+
+func load_Float3(xn *xmlx.Node, obj *cdom.Float3) {
+
+}
+
+func load_Int2(xn *xmlx.Node, obj *cdom.Int2) {
+
+}
+
+func load_KxJoint(xn *xmlx.Node, obj *cdom.KxJoint) {
+
+}
+
+func load_SidFloat3(xn *xmlx.Node, obj *cdom.SidFloat3) {
+
+}
+
+func load_GeometryBrepCurve(xn *xmlx.Node, obj *cdom.GeometryBrepCurve) {
 
 }
 
 func load_VisualSceneDef(xn *xmlx.Node, obj *cdom.VisualSceneDef) {
+
+}
+
+func load_FxPassState(xn *xmlx.Node, obj *cdom.FxPassState) {
+
+}
+
+func load_GeometryPrimitiveKind(xn *xmlx.Node, obj *cdom.GeometryPrimitiveKind) {
+
+}
+
+func load_GeometryBrepSurface(xn *xmlx.Node, obj *cdom.GeometryBrepSurface) {
+
+}
+
+func load_LightDef(xn *xmlx.Node, obj *cdom.LightDef) {
+
+}
+
+func load_FxPassEvaluationTarget(xn *xmlx.Node, obj *cdom.FxPassEvaluationTarget) {
+
+}
+
+func load_CameraPerspective(xn *xmlx.Node, obj *cdom.CameraPerspective) {
+
+}
+
+func load_Float4(xn *xmlx.Node, obj *cdom.Float4) {
+
+}
+
+func load_KxModelDef(xn *xmlx.Node, obj *cdom.KxModelDef) {
+
+}
+
+func load_AnimationInst(xn *xmlx.Node, obj *cdom.AnimationInst) {
+
+}
+
+func load_FxFormatChannels(xn *xmlx.Node, obj *cdom.FxFormatChannels) {
+
+}
+
+func load_KxKinematicsSystem(xn *xmlx.Node, obj *cdom.KxKinematicsSystem) {
+
+}
+
+func load_KxKinematicsAxis(xn *xmlx.Node, obj *cdom.KxKinematicsAxis) {
+
+}
+
+func load_FxBinding(xn *xmlx.Node, obj *cdom.FxBinding) {
+
+}
+
+func load_Float3x2(xn *xmlx.Node, obj *cdom.Float3x2) {
+
+}
+
+func load_FxSamplerStates(xn *xmlx.Node, obj *cdom.FxSamplerStates) {
+
+}
+
+func load_PxForceFieldInst(xn *xmlx.Node, obj *cdom.PxForceFieldInst) {
+
+}
+
+func load_KxAxisLimits(xn *xmlx.Node, obj *cdom.KxAxisLimits) {
+
+}
+
+func load_PxRigidConstraintLimit(xn *xmlx.Node, obj *cdom.PxRigidConstraintLimit) {
+
+}
+
+func load_PxMaterialInst(xn *xmlx.Node, obj *cdom.PxMaterialInst) {
+
+}
+
+func load_VisualSceneRenderingMaterialInst(xn *xmlx.Node, obj *cdom.VisualSceneRenderingMaterialInst) {
+
+}
+
+func load_AnimationClipInst(xn *xmlx.Node, obj *cdom.AnimationClipInst) {
+
+}
+
+func load_FxAnnotation(xn *xmlx.Node, obj *cdom.FxAnnotation) {
+
+}
+
+func load_GeometryBrepEllipse(xn *xmlx.Node, obj *cdom.GeometryBrepEllipse) {
+
+}
+
+func load_GeometryBrepSurfaces(xn *xmlx.Node, obj *cdom.GeometryBrepSurfaces) {
+
+}
+
+func load_GeometryBrepCurves(xn *xmlx.Node, obj *cdom.GeometryBrepCurves) {
+
+}
+
+func load_Int3x3(xn *xmlx.Node, obj *cdom.Int3x3) {
+
+}
+
+func load_AnimationClipDef(xn *xmlx.Node, obj *cdom.AnimationClipDef) {
+
+}
+
+func load_PxRigidConstraintInst(xn *xmlx.Node, obj *cdom.PxRigidConstraintInst) {
+
+}
+
+func load_GeometrySpline(xn *xmlx.Node, obj *cdom.GeometrySpline) {
+
+}
+
+func load_Bool2(xn *xmlx.Node, obj *cdom.Bool2) {
+
+}
+
+func load_GeometryBrepShells(xn *xmlx.Node, obj *cdom.GeometryBrepShells) {
+
+}
+
+func load_KxFrameOrigin(xn *xmlx.Node, obj *cdom.KxFrameOrigin) {
+
+}
+
+func load_FxColorOrTexture(xn *xmlx.Node, obj *cdom.FxColorOrTexture) {
+
+}
+
+func load_ParamOrRefSid(xn *xmlx.Node, obj *cdom.ParamOrRefSid) {
+
+}
+
+func load_PxModelInst(xn *xmlx.Node, obj *cdom.PxModelInst) {
+
+}
+
+func load_Extra(xn *xmlx.Node, obj *cdom.Extra) {
+
+}
+
+func load_GeometryControlVertices(xn *xmlx.Node, obj *cdom.GeometryControlVertices) {
+
+}
+
+func load_SidBool(xn *xmlx.Node, obj *cdom.SidBool) {
+
+}
+
+func load_FxCubeFace(xn *xmlx.Node, obj *cdom.FxCubeFace) {
+
+}
+
+func load_Source(xn *xmlx.Node, obj *cdom.Source) {
+
+}
+
+func load_KxJointKind(xn *xmlx.Node, obj *cdom.KxJointKind) {
+
+}
+
+func load_KxAttachment(xn *xmlx.Node, obj *cdom.KxAttachment) {
+
+}
+
+func load_PxShape(xn *xmlx.Node, obj *cdom.PxShape) {
+
+}
+
+func load_GeometryBrepHyperbola(xn *xmlx.Node, obj *cdom.GeometryBrepHyperbola) {
+
+}
+
+func load_FxProfileCommon(xn *xmlx.Node, obj *cdom.FxProfileCommon) {
+
+}
+
+func load_GeometryBrepNurbsSurface(xn *xmlx.Node, obj *cdom.GeometryBrepNurbsSurface) {
+
+}
+
+func load_ParamOrUint(xn *xmlx.Node, obj *cdom.ParamOrUint) {
+
+}
+
+func load_FxPassProgram(xn *xmlx.Node, obj *cdom.FxPassProgram) {
+
+}
+
+func load_FxPassProgramBindUniform(xn *xmlx.Node, obj *cdom.FxPassProgramBindUniform) {
+
+}
+
+func load_GeometryPositioning(xn *xmlx.Node, obj *cdom.GeometryPositioning) {
+
+}
+
+func load_GeometryBrepSolids(xn *xmlx.Node, obj *cdom.GeometryBrepSolids) {
+
+}
+
+func load_FxPassEvaluationClearDepth(xn *xmlx.Node, obj *cdom.FxPassEvaluationClearDepth) {
+
+}
+
+func load_SidFloat(xn *xmlx.Node, obj *cdom.SidFloat) {
+
+}
+
+func load_KxModelInst(xn *xmlx.Node, obj *cdom.KxModelInst) {
+
+}
+
+func load_Int4(xn *xmlx.Node, obj *cdom.Int4) {
+
+}
+
+func load_KxAxisIndex(xn *xmlx.Node, obj *cdom.KxAxisIndex) {
+
+}
+
+func load_FxTechniqueCommon(xn *xmlx.Node, obj *cdom.FxTechniqueCommon) {
+
+}
+
+func load_AnimationChannel(xn *xmlx.Node, obj *cdom.AnimationChannel) {
+
+}
+
+func load_FxShaderStage(xn *xmlx.Node, obj *cdom.FxShaderStage) {
 
 }

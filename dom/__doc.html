@@ -51,9 +51,6 @@ The go-collada/dom package provides logic-less base data structures
 for all resource types used in COLLADA 1.5 or 1.4.1 documents.
 </p>
 <p>
-________
-</p>
-<p>
 These data structures only describe resource definitions and instances, but do not provide
 any specific logic or algorithms, such as physics or visual rendering.
 </p>
@@ -873,11 +870,6 @@ considered &#34;auxiliary helpers&#34; rather than primary / &#34;first-class&#3
 				
 			
 				
-				<dd><a href="#FxSamplerWrapping">type FxSamplerWrapping</a></dd>
-				
-				
-			
-				
 				<dd><a href="#FxShaderStage">type FxShaderStage</a></dd>
 				
 				
@@ -914,11 +906,6 @@ considered &#34;auxiliary helpers&#34; rather than primary / &#34;first-class&#3
 			
 				
 				<dd><a href="#FxVertexInputBinding">type FxVertexInputBinding</a></dd>
-				
-				
-			
-				
-				<dd><a href="#FxWrapKind">type FxWrapKind</a></dd>
 				
 				
 			
@@ -2962,11 +2949,11 @@ considered &#34;auxiliary helpers&#34; rather than primary / &#34;first-class&#3
         MaxAnisotropy: 1,
     }
     <span class="comment">//	Default texture repeating and clamping.</span>
-    DefaultFxSamplerWrapping = &amp;FxSamplerWrapping{
+    DefaultFxSamplerWrapping = &amp;ugfx.SamplerWrapping{
         BorderColor: ugfx.Rgba32{R: 0, G: 0, B: 0, A: 1},
-        WrapS:       FxWrapKindWrap,
-        WrapT:       FxWrapKindWrap,
-        WrapP:       FxWrapKindWrap,
+        WrapS:       ugfx.WrapKindRepeat,
+        WrapT:       ugfx.WrapKindRepeat,
+        WrapP:       ugfx.WrapKindRepeat,
     }
 )</pre>
 				
@@ -4289,7 +4276,7 @@ Constructor
 		
 			
 			
-			<h2 id="Document">type <a href="/target/doc.go?s=3737:3879#L51">Document</a></h2>
+			<h2 id="Document">type <a href="/target/doc.go?s=3717:3859#L48">Document</a></h2>
 			<pre>type Document struct {
     <span class="comment">//	Asset</span>
     HasAsset
@@ -6049,7 +6036,7 @@ Instantiates a material resource.
 
 			
 				
-				<h3 id="FxMaterialInst.AccessField">func (*FxMaterialInst) <a href="/target/-gen-refsids.go?s=41171:41231#L1676">AccessField</a></h3>
+				<h3 id="FxMaterialInst.AccessField">func (*FxMaterialInst) <a href="/target/-gen-refsids.go?s=41050:41110#L1672">AccessField</a></h3>
 				<pre>func (me *FxMaterialInst) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -6665,7 +6652,7 @@ GLSL shader sources
 
 			
 				
-				<h3 id="FxProfileGlslCodeInclude.AccessField">func (*FxProfileGlslCodeInclude) <a href="/target/-gen-refsids.go?s=40545:40615#L1646">AccessField</a></h3>
+				<h3 id="FxProfileGlslCodeInclude.AccessField">func (*FxProfileGlslCodeInclude) <a href="/target/-gen-refsids.go?s=39595:39665#L1600">AccessField</a></h3>
 				<pre>func (me *FxProfileGlslCodeInclude) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -6678,7 +6665,7 @@ Supported field names: &#34;IsInclude&#34;.
 		
 			
 			
-			<h2 id="FxSampler">type <a href="/target/fxsampler.go?s=3115:3433#L85">FxSampler</a></h2>
+			<h2 id="FxSampler">type <a href="/target/fxsampler.go?s=1670:1988#L55">FxSampler</a></h2>
 			<pre>type FxSampler struct {
     <span class="comment">//	Extras</span>
     HasExtras
@@ -6706,7 +6693,7 @@ Declares a texture sampler.
 
 			
 				
-				<h3 id="NewFxSampler">func <a href="/target/fxsampler.go?s=3450:3485#L101">NewFxSampler</a></h3>
+				<h3 id="NewFxSampler">func <a href="/target/fxsampler.go?s=2005:2040#L71">NewFxSampler</a></h3>
 				<pre>func NewFxSampler() (me *FxSampler)</pre>
 				<p>
 Constructor
@@ -6719,7 +6706,7 @@ Constructor
 		
 			
 			
-			<h2 id="FxSamplerFiltering">type <a href="/target/fxsampler.go?s=3820:4556#L115">FxSamplerFiltering</a></h2>
+			<h2 id="FxSamplerFiltering">type <a href="/target/fxsampler.go?s=2252:2988#L79">FxSamplerFiltering</a></h2>
 			<pre>type FxSamplerFiltering struct {
     <span class="comment">//	Magnification filter. Must be one of the FxFilterKind* enumerated constants.</span>
     FilterMag FxFilterKind
@@ -6759,7 +6746,7 @@ Controls texture minification, magnification and MIP-mapping.
 		
 			
 			
-			<h2 id="FxSamplerImage">type <a href="/target/fxsampler.go?s=3680:3753#L109">FxSamplerImage</a></h2>
+			<h2 id="FxSamplerImage">type <a href="/target/fxsampler.go?s=3038:3111#L103">FxSamplerImage</a></h2>
 			<pre>type FxSamplerImage struct {
     <span class="comment">//	Sid, Name, Extras, DefRef</span>
     FxImageInst
@@ -6821,7 +6808,7 @@ Categorizes the kind of an FxSampler.
 		
 			
 			
-			<h2 id="FxSamplerStates">type <a href="/target/fxsampler.go?s=4627:4853#L139">FxSamplerStates</a></h2>
+			<h2 id="FxSamplerStates">type <a href="/target/fxsampler.go?s=3182:3411#L109">FxSamplerStates</a></h2>
 			<pre>type FxSamplerStates struct {
     <span class="comment">//	Extras</span>
     HasExtras
@@ -6830,7 +6817,7 @@ Categorizes the kind of an FxSampler.
     Filtering *FxSamplerFiltering
 
     <span class="comment">//	Controls texture repeating and clamping.</span>
-    Wrapping *FxSamplerWrapping
+    Wrapping *ugfx.SamplerWrapping
 }</pre>
 			<p>
 Allows users to modify an effect&#39;s sampler state from a material.
@@ -6845,48 +6832,13 @@ Allows users to modify an effect&#39;s sampler state from a material.
 
 			
 				
-				<h3 id="NewFxSamplerStates">func <a href="/target/fxsampler.go?s=4870:4917#L151">NewFxSamplerStates</a></h3>
+				<h3 id="NewFxSamplerStates">func <a href="/target/fxsampler.go?s=3428:3475#L121">NewFxSamplerStates</a></h3>
 				<pre>func NewFxSamplerStates() (me *FxSamplerStates)</pre>
 				<p>
 Constructor
 </p>
 
 				
-			
-
-			
-		
-			
-			
-			<h2 id="FxSamplerWrapping">type <a href="/target/fxsampler.go?s=5072:5682#L157">FxSamplerWrapping</a></h2>
-			<pre>type FxSamplerWrapping struct {
-    <span class="comment">//	When reading past the edge of the texture address space</span>
-    <span class="comment">//	based on the wrap modes involving clamps, this color takes over.</span>
-    BorderColor ugfx.Rgba32
-
-    <span class="comment">//	Controls texture repeating and clamping of the S coordinate.</span>
-    <span class="comment">//	Must be one of the FxWrapKind* enumerated constants.</span>
-    WrapS FxWrapKind
-
-    <span class="comment">//	Controls texture repeating and clamping of the T coordinate.</span>
-    <span class="comment">//	Must be one of the FxWrapKind* enumerated constants.</span>
-    WrapT FxWrapKind
-
-    <span class="comment">//	Controls texture repeating and clamping of the P coordinate.</span>
-    <span class="comment">//	Must be one of the FxWrapKind* enumerated constants.</span>
-    WrapP FxWrapKind
-}</pre>
-			<p>
-Controls texture repeating and clamping.
-</p>
-
-
-			
-
-			
-
-			
-
 			
 
 			
@@ -7170,53 +7122,6 @@ Binds geometry vertex inputs to effect vertex inputs upon instantiation.
 </p>
 
 
-			
-
-			
-
-			
-
-			
-
-			
-		
-			
-			
-			<h2 id="FxWrapKind">type <a href="/target/fxsampler.go?s=1187:1206#L38">FxWrapKind</a></h2>
-			<pre>type FxWrapKind int</pre>
-			<p>
-Categorizes the kinds of wrapping used in FxSamplerWrapping.
-</p>
-
-
-			
-				<pre>const (
-    <span class="comment">//	Ignores the integer part of texture coordinates, using only the fractional part and tiling the</span>
-    <span class="comment">//	texture at every integer junction. For example, for u values between 0 and 3, the texture is</span>
-    <span class="comment">//	repeated three times; no mirroring is performed.</span>
-    FxWrapKindWrap FxWrapKind = 0x2901
-
-    <span class="comment">//	First mirrors the texture coordinate. The mirrored coordinate is then clamped as described for</span>
-    <span class="comment">//	FxWrapKindClamp. Flips the texture at every integer junction. For u values between 0 and 1,</span>
-    <span class="comment">//	for example, the texture is addressed normally; between 1 and 2, the texture is flipped (mirrored);</span>
-    <span class="comment">//	between 2 and 3, the texture is normal again; and so on.</span>
-    FxWrapKindMirror FxWrapKind = 0x8370
-
-    <span class="comment">//	Clamps texture coordinates at all MIPmap levels such that</span>
-    <span class="comment">//	the texture filter never samples a border texel.</span>
-    FxWrapKindClamp FxWrapKind = 0x812F
-
-    <span class="comment">//	Clamps texture coordinates at all MIPmaps such that the texture filter always samples border</span>
-    <span class="comment">//	texels for fragments whose corresponding texture coordinate is sufficiently far outside</span>
-    <span class="comment">//	the range [0, 1]. Much like FxWrapKindClamp, except texture coordinates outside</span>
-    <span class="comment">//	the range [0.0, 1.0] are set to the border color.</span>
-    FxWrapKindBorder FxWrapKind = 0x812D
-
-    <span class="comment">//	Takes the absolute value of the texture coordinate (thus, mirroring around 0),</span>
-    <span class="comment">//	and then clamps to the maximum value.</span>
-    FxWrapKindMirrorOnce FxWrapKind = 41
-)</pre>
-				
 			
 
 			
@@ -12778,7 +12683,7 @@ Constructor
 
 			
 				
-				<h3 id="LightAttenuation.AccessField">func (*LightAttenuation) <a href="/target/-gen-refsids.go?s=39174:39236#L1578">AccessField</a></h3>
+				<h3 id="LightAttenuation.AccessField">func (*LightAttenuation) <a href="/target/-gen-refsids.go?s=39303:39365#L1586">AccessField</a></h3>
 				<pre>func (me *LightAttenuation) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -13127,7 +13032,7 @@ Declares a point of interest in a scene.
 
 			
 				
-				<h3 id="NodeDef.AccessField">func (*NodeDef) <a href="/target/-gen-refsids.go?s=41375:41428#L1686">AccessField</a></h3>
+				<h3 id="NodeDef.AccessField">func (*NodeDef) <a href="/target/-gen-refsids.go?s=38361:38414#L1542">AccessField</a></h3>
 				<pre>func (me *NodeDef) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -13202,7 +13107,7 @@ Instantiates a node resource.
 
 			
 				
-				<h3 id="NodeInst.AccessField">func (*NodeInst) <a href="/target/-gen-refsids.go?s=41576:41630#L1696">AccessField</a></h3>
+				<h3 id="NodeInst.AccessField">func (*NodeInst) <a href="/target/-gen-refsids.go?s=41248:41302#L1682">AccessField</a></h3>
 				<pre>func (me *NodeInst) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -13267,7 +13172,7 @@ Declares parametric information for its parent resource.
 
 			
 				
-				<h3 id="Param.AccessField">func (*Param) <a href="/target/-gen-refsids.go?s=39908:39959#L1614">AccessField</a></h3>
+				<h3 id="Param.AccessField">func (*Param) <a href="/target/-gen-refsids.go?s=40628:40679#L1650">AccessField</a></h3>
 				<pre>func (me *Param) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -13303,7 +13208,7 @@ Declares a new parameter for its parent resource, and assigns it an initial valu
 
 			
 				
-				<h3 id="ParamDef.AccessField">func (*ParamDef) <a href="/target/-gen-refsids.go?s=39462:39516#L1592">AccessField</a></h3>
+				<h3 id="ParamDef.AccessField">func (*ParamDef) <a href="/target/-gen-refsids.go?s=40427:40481#L1640">AccessField</a></h3>
 				<pre>func (me *ParamDef) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -13971,7 +13876,7 @@ instantiates a physics model within a physics scene.
 
 			
 				
-				<h3 id="PxModelInst.AccessField">func (*PxModelInst) <a href="/target/-gen-refsids.go?s=40134:40191#L1626">AccessField</a></h3>
+				<h3 id="PxModelInst.AccessField">func (*PxModelInst) <a href="/target/-gen-refsids.go?s=40854:40911#L1662">AccessField</a></h3>
 				<pre>func (me *PxModelInst) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -14046,7 +13951,7 @@ Common-technique profile for rigid body definitions and instances.
 
 			
 				
-				<h3 id="PxRigidBodyCommon.AccessField">func (*PxRigidBodyCommon) <a href="/target/-gen-refsids.go?s=38357:38420#L1542">AccessField</a></h3>
+				<h3 id="PxRigidBodyCommon.AccessField">func (*PxRigidBodyCommon) <a href="/target/-gen-refsids.go?s=41773:41836#L1706">AccessField</a></h3>
 				<pre>func (me *PxRigidBodyCommon) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -14166,7 +14071,7 @@ Instantiates a rigid-body resource.
 
 			
 				
-				<h3 id="PxRigidBodyInst.AccessField">func (*PxRigidBodyInst) <a href="/target/-gen-refsids.go?s=41771:41832#L1706">AccessField</a></h3>
+				<h3 id="PxRigidBodyInst.AccessField">func (*PxRigidBodyInst) <a href="/target/-gen-refsids.go?s=40008:40069#L1620">AccessField</a></h3>
 				<pre>func (me *PxRigidBodyInst) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -14371,7 +14276,7 @@ Degrees of freedom and ranges.
 
 			
 				
-				<h3 id="PxRigidConstraintLimit.AccessField">func (*PxRigidConstraintLimit) <a href="/target/-gen-refsids.go?s=39657:39725#L1602">AccessField</a></h3>
+				<h3 id="PxRigidConstraintLimit.AccessField">func (*PxRigidConstraintLimit) <a href="/target/-gen-refsids.go?s=39037:39105#L1574">AccessField</a></h3>
 				<pre>func (me *PxRigidConstraintLimit) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -14420,7 +14325,7 @@ Constructor
 
 			
 				
-				<h3 id="PxRigidConstraintSpring.AccessField">func (*PxRigidConstraintSpring) <a href="/target/-gen-refsids.go?s=38845:38914#L1564">AccessField</a></h3>
+				<h3 id="PxRigidConstraintSpring.AccessField">func (*PxRigidConstraintSpring) <a href="/target/-gen-refsids.go?s=41468:41537#L1692">AccessField</a></h3>
 				<pre>func (me *PxRigidConstraintSpring) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -14614,7 +14519,7 @@ A component part of a rigid body&#39;s collection of bounding shapes for collisi
 
 			
 				
-				<h3 id="PxShape.AccessField">func (*PxShape) <a href="/target/-gen-refsids.go?s=40977:41030#L1666">AccessField</a></h3>
+				<h3 id="PxShape.AccessField">func (*PxShape) <a href="/target/-gen-refsids.go?s=39810:39863#L1610">AccessField</a></h3>
 				<pre>func (me *PxShape) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -15858,7 +15763,7 @@ Declares information specifying how to evaluate a visual scene.
 
 			
 				
-				<h3 id="VisualSceneEvaluation.AccessField">func (*VisualSceneEvaluation) <a href="/target/-gen-refsids.go?s=40332:40399#L1636">AccessField</a></h3>
+				<h3 id="VisualSceneEvaluation.AccessField">func (*VisualSceneEvaluation) <a href="/target/-gen-refsids.go?s=40218:40285#L1630">AccessField</a></h3>
 				<pre>func (me *VisualSceneEvaluation) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.
@@ -15966,7 +15871,7 @@ Constructor
 
 			
 				
-				<h3 id="VisualSceneRendering.AccessField">func (*VisualSceneRendering) <a href="/target/-gen-refsids.go?s=40764:40830#L1656">AccessField</a></h3>
+				<h3 id="VisualSceneRendering.AccessField">func (*VisualSceneRendering) <a href="/target/-gen-refsids.go?s=38820:38886#L1564">AccessField</a></h3>
 				<pre>func (me *VisualSceneRendering) AccessField(fn string) interface{}</pre>
 				<p>
 RefSidFielder implementation.

@@ -7,12 +7,33 @@ import (
 	xmlx "github.com/jteeuwen/go-pkg-xmlx"
 
 	cdom "github.com/go3d/go-collada/dom"
+	ugfx "github.com/metaleap/go-util/gfx"
 	ustr "github.com/metaleap/go-util/str"
 	xsdt "github.com/metaleap/go-xsd/types"
 )
 
 func load_Document(xn *xmlx.Node, obj *cdom.Document) {
 	obj.Scene = obj_Scene(xn, "scene")
+}
+
+func load_SamplerWrapping(xn *xmlx.Node, obj *ugfx.SamplerWrapping) {
+	if cn := xcn(xn, "border_color"); cn != nil {
+		list_Rgba32(cn, &obj.BorderColor)
+	}
+	for n, i := range map[string]*ugfx.WrapKind{"wrap_s": &obj.WrapS, "wrap_t": &obj.WrapT, "wrap_p": &obj.WrapP} {
+		switch strings.ToUpper(xs(xn, n)) {
+		case "BORDER":
+			*i = ugfx.WrapKindBorder
+		case "CLAMP":
+			*i = ugfx.WrapKindClamp
+		case "MIRROR":
+			*i = ugfx.WrapKindMirror
+		case "MIRROR_ONCE":
+			*i = ugfx.WrapKindMirrorOnce
+		default:
+			*i = ugfx.WrapKindRepeat
+		}
+	}
 }
 
 func load_FxEffectDef(xn *xmlx.Node, obj *cdom.FxEffectDef) {
@@ -493,26 +514,6 @@ func load_FxEffectInst(xn *xmlx.Node, obj *cdom.FxEffectInst) {
 func load_KxJointLimits(xn *xmlx.Node, obj *cdom.KxJointLimits) {
 	obj.Max = obj_SidFloat(xn, "max")
 	obj.Min = obj_SidFloat(xn, "min")
-}
-
-func load_FxSamplerWrapping(xn *xmlx.Node, obj *cdom.FxSamplerWrapping) {
-	if cn := xcn(xn, "border_color"); cn != nil {
-		list_Rgba32(cn, &obj.BorderColor)
-	}
-	for n, i := range map[string]*cdom.FxWrapKind{"wrap_s": &obj.WrapS, "wrap_t": &obj.WrapT, "wrap_p": &obj.WrapP} {
-		switch strings.ToUpper(xs(xn, n)) {
-		case "BORDER":
-			*i = cdom.FxWrapKindBorder
-		case "CLAMP":
-			*i = cdom.FxWrapKindClamp
-		case "MIRROR":
-			*i = cdom.FxWrapKindMirror
-		case "MIRROR_ONCE":
-			*i = cdom.FxWrapKindMirrorOnce
-		default:
-			*i = cdom.FxWrapKindWrap
-		}
-	}
 }
 
 func load_AnimationInst(xn *xmlx.Node, obj *cdom.AnimationInst) {
@@ -1845,7 +1846,7 @@ func load_FxSamplerImage(xn *xmlx.Node, obj *cdom.FxSamplerImage) {
 
 func load_FxSamplerStates(xn *xmlx.Node, obj *cdom.FxSamplerStates) {
 	obj.Filtering = obj_FxSamplerFiltering(xn, "")
-	obj.Wrapping = obj_FxSamplerWrapping(xn, "")
+	obj.Wrapping = obj_SamplerWrapping(xn, "")
 }
 
 func load_PxRigidBodyDefs(xn *xmlx.Node, obj *cdom.PxRigidBodyDefs) {
@@ -1893,11 +1894,34 @@ func load_FxSamplerKind(xn *xmlx.Node, obj *cdom.FxSamplerKind) {
 func load_FxTechniqueKind(xn *xmlx.Node, obj *cdom.FxTechniqueKind) {
 }
 
-func load_FxWrapKind(xn *xmlx.Node, obj *cdom.FxWrapKind) {
-}
-
 func load_FxTextureOpaque(xn *xmlx.Node, obj *cdom.FxTextureOpaque) {
 }
 
 func load_AnimSamplerBehavior(xn *xmlx.Node, obj *cdom.AnimSamplerBehavior) {
+}
+
+func init_SamplerWrapping(xn *xmlx.Node) (obj *ugfx.SamplerWrapping) {
+	obj = new(ugfx.SamplerWrapping)
+
+	load_SamplerWrapping(xn, obj)
+	return
+}
+
+func obj_SamplerWrapping(xn *xmlx.Node, n string) (obj *ugfx.SamplerWrapping) {
+	if (xn != nil) && (len(n) > 0) {
+		xn = xcn(xn, n)
+	}
+	if xn != nil {
+		obj = init_SamplerWrapping(xn)
+	}
+	return
+}
+
+func objs_SamplerWrapping(xn *xmlx.Node, n string) (objs []*ugfx.SamplerWrapping) {
+	xns := xcns(xn, n)
+	objs = make([]*ugfx.SamplerWrapping, len(xns))
+	for i, xn := range xns {
+		objs[i] = obj_SamplerWrapping(xn, "")
+	}
+	return
 }

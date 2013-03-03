@@ -89,7 +89,7 @@ a variety of go-collada/dom package resource definitions and instances.
 				<dd><a href="#NewFxImageDef">func NewFxImageDef(id, refUrl string) (me *cdom.FxImageDef)</a></dd>
 			
 				
-				<dd><a href="#NewFxSampler2D">func NewFxSampler2D(image *cdom.FxImageInst, filtering *cdom.FxSamplerFiltering, wrapping *cdom.FxSamplerWrapping) (me *cdom.FxSampler)</a></dd>
+				<dd><a href="#NewFxSampler2D">func NewFxSampler2D(image *cdom.FxImageInst, filtering *cdom.FxSamplerFiltering, wrapping *ugfx.SamplerWrapping) (me *cdom.FxSampler)</a></dd>
 			
 				
 				<dd><a href="#NewFxTexture">func NewFxTexture(sampler2DParamRef, texCoord string) (me *cdom.FxTexture)</a></dd>
@@ -207,8 +207,8 @@ to be initialized from the specified refUrl.
 		
 			
 			
-			<h2 id="NewFxSampler2D">func <a href="/target/fxsampler.go?s=310:445#L1">NewFxSampler2D</a></h2>
-			<pre>func NewFxSampler2D(image *cdom.FxImageInst, filtering *cdom.FxSamplerFiltering, wrapping *cdom.FxSamplerWrapping) (me *cdom.FxSampler)</pre>
+			<h2 id="NewFxSampler2D">func <a href="/target/fxsampler.go?s=350:483#L1">NewFxSampler2D</a></h2>
+			<pre>func NewFxSampler2D(image *cdom.FxImageInst, filtering *cdom.FxSamplerFiltering, wrapping *ugfx.SamplerWrapping) (me *cdom.FxSampler)</pre>
 			<p>
 Creates and returns a new FxSampler of cdom.FxSamplerKind2D, sampling the specified
 image with the specified filtering (or cdom.DefaultFxSamplerFiltering if nil) and the

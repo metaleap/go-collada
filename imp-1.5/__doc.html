@@ -25,14 +25,14 @@
 -->
 
 	
+		
 		<div id="short-nav">
 			<dl>
 			<dd><code>import "github.com/go3d/go-collada/imp-1.5"</code></dd>
 			</dl>
 			<dl>
 			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
-			<dd><a href="#pkg-index">Index</a></dd>
-			
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
 			
 			
 			</dl>
@@ -52,10 +52,16 @@ Note, Collada 1.4.1 documents are insta-bootstrapped to version 1.5 in-memory us
 			</div>
 		</div>
 		
-	
-		<h2 id="pkg-index">Index</h2>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
 		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
-		<div id="manual-nav">
+			<div id="manual-nav">
 			<dl>
 			
 			
@@ -73,7 +79,8 @@ Note, Collada 1.4.1 documents are insta-bootstrapped to version 1.5 in-memory us
 				
 			
 			
-		</dl>
+			</dl>
+			</div><!-- #manual-nav -->
 
 		
 
@@ -99,14 +106,16 @@ Note, Collada 1.4.1 documents are insta-bootstrapped to version 1.5 in-memory us
 			</span>
 			</p>
 		
-	
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
 		
 		
 		
 			
 			
-			<h2 id="ImportCollada">func <a href="/target/imp.go?s=651:742#L22">ImportCollada</a></h2>
-			<pre>func ImportCollada(colladaDoc []byte, importBag *ImportBag) (doc *cdom.Document, err error)</pre>
+			<h2 id="ImportCollada">func <a href="/target/imp.go?s=650:741#L22">ImportCollada</a></h2>
+			<pre>func ImportCollada(colladaDoc []<a href="/pkg/builtin/#byte">byte</a>, importBag *<a href="#ImportBag">ImportBag</a>) (doc *<a href="/pkg/github.com/go3d/go-collada/dom/">cdom</a>.<a href="/pkg/github.com/go3d/go-collada/dom/#Document">Document</a>, err <a href="/pkg/builtin/#error">error</a>)</pre>
 			<p>
 Imports the specified Collada document, using the import options specified in importBag.
 </p>
@@ -116,7 +125,7 @@ Imports the specified Collada document, using the import options specified in im
 		
 			
 			
-			<h2 id="ImportBag">type <a href="/target/imp.go?s=305:330#L7">ImportBag</a></h2>
+			<h2 id="ImportBag">type <a href="/target/imp.go?s=304:329#L7">ImportBag</a></h2>
 			<pre>type ImportBag struct {
 }</pre>
 			<p>
@@ -132,8 +141,8 @@ Provides options for importing Collada documents.
 
 			
 				
-				<h3 id="NewImportBag">func <a href="/target/imp.go?s=395:430#L11">NewImportBag</a></h3>
-				<pre>func NewImportBag() (me *ImportBag)</pre>
+				<h3 id="NewImportBag">func <a href="/target/imp.go?s=394:429#L11">NewImportBag</a></h3>
+				<pre>func NewImportBag() (me *<a href="#ImportBag">ImportBag</a>)</pre>
 				<p>
 Initializes and returns a newly created ImportBag instance.
 </p>
@@ -143,7 +152,6 @@ Initializes and returns a newly created ImportBag instance.
 
 			
 		
-		</div>
 	
 
 	

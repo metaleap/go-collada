@@ -7,7 +7,6 @@ import (
 	xmlx "github.com/goforks/go-pkg-xmlx"
 
 	cdom "github.com/go3d/go-collada/dom"
-	ugfx "github.com/metaleap/go-util/gfx"
 	ustr "github.com/metaleap/go-util/str"
 	xsdt "github.com/metaleap/go-xsd/types"
 )
@@ -16,22 +15,22 @@ func load_Document(xn *xmlx.Node, obj *cdom.Document) {
 	obj.Scene = obj_Scene(xn, "scene")
 }
 
-func load_SamplerWrapping(xn *xmlx.Node, obj *ugfx.SamplerWrapping) {
+func load_SamplerWrapping(xn *xmlx.Node, obj *cdom.FxSamplerWrapping) {
 	if cn := xcn(xn, "border_color"); cn != nil {
 		list_Rgba32(cn, &obj.BorderColor)
 	}
-	for n, i := range map[string]*ugfx.WrapKind{"wrap_s": &obj.WrapS, "wrap_t": &obj.WrapT, "wrap_p": &obj.WrapP} {
+	for n, i := range map[string]*cdom.FxWrapKind{"wrap_s": &obj.WrapS, "wrap_t": &obj.WrapT, "wrap_p": &obj.WrapP} {
 		switch strings.ToUpper(xs(xn, n)) {
 		case "BORDER":
-			*i = ugfx.WrapKindBorder
+			*i = cdom.FxWrapKindBorder
 		case "CLAMP":
-			*i = ugfx.WrapKindClamp
+			*i = cdom.FxWrapKindClamp
 		case "MIRROR":
-			*i = ugfx.WrapKindMirror
+			*i = cdom.FxWrapKindMirror
 		case "MIRROR_ONCE":
-			*i = ugfx.WrapKindMirrorOnce
+			*i = cdom.FxWrapKindMirrorOnce
 		default:
-			*i = ugfx.WrapKindRepeat
+			*i = cdom.FxWrapKindRepeat
 		}
 	}
 }
@@ -1900,14 +1899,14 @@ func load_FxTextureOpaque(xn *xmlx.Node, obj *cdom.FxTextureOpaque) {
 func load_AnimSamplerBehavior(xn *xmlx.Node, obj *cdom.AnimSamplerBehavior) {
 }
 
-func init_SamplerWrapping(xn *xmlx.Node) (obj *ugfx.SamplerWrapping) {
-	obj = new(ugfx.SamplerWrapping)
+func init_SamplerWrapping(xn *xmlx.Node) (obj *cdom.FxSamplerWrapping) {
+	obj = new(cdom.FxSamplerWrapping)
 
 	load_SamplerWrapping(xn, obj)
 	return
 }
 
-func obj_SamplerWrapping(xn *xmlx.Node, n string) (obj *ugfx.SamplerWrapping) {
+func obj_SamplerWrapping(xn *xmlx.Node, n string) (obj *cdom.FxSamplerWrapping) {
 	if (xn != nil) && (len(n) > 0) {
 		xn = xcn(xn, n)
 	}
@@ -1917,9 +1916,9 @@ func obj_SamplerWrapping(xn *xmlx.Node, n string) (obj *ugfx.SamplerWrapping) {
 	return
 }
 
-func objs_SamplerWrapping(xn *xmlx.Node, n string) (objs []*ugfx.SamplerWrapping) {
+func objs_SamplerWrapping(xn *xmlx.Node, n string) (objs []*cdom.FxSamplerWrapping) {
 	xns := xcns(xn, n)
-	objs = make([]*ugfx.SamplerWrapping, len(xns))
+	objs = make([]*cdom.FxSamplerWrapping, len(xns))
 	for i, xn := range xns {
 		objs[i] = obj_SamplerWrapping(xn, "")
 	}

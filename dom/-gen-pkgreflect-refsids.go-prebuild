@@ -1,4 +1,5 @@
 //	Uncomment this to re-generate the pkgreflect sub-package:
 # colldom-gen-pkgreflect $dir
+
 //	Uncomment this to re-generate -gen-refsids.go:
 # colldom-gen-refsids $dir

@@ -8,7 +8,7 @@ import (
 	"runtime"
 
 	conv "github.com/go3d/go-collada/conv-1.4.1-to-1.5"
-	xmlx "github.com/goforks/xmlx"
+	xmlx "github.com/go-forks/xmlx"
 	ugo "github.com/metaleap/go-util"
 	uio "github.com/metaleap/go-util/io"
 )

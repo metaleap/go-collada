@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	xmlx "github.com/goforks/xmlx"
+	xmlx "github.com/go-forks/xmlx"
 	util "github.com/metaleap/go-util"
 	ustr "github.com/metaleap/go-util/str"
 )

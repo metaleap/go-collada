@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"strings"
 
-	xmlx "github.com/goforks/xmlx"
+	xmlx "github.com/go-forks/xmlx"
 
 	cdom "github.com/go3d/go-collada/dom"
 	ustr "github.com/metaleap/go-util/str"

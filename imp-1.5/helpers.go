@@ -5,10 +5,10 @@ import (
 
 	xmlx "github.com/go-forks/xmlx"
 
+	"github.com/go-utils/ugfx"
+	"github.com/go-utils/ugo"
+	"github.com/go-utils/unum"
 	cdom "github.com/go3d/go-collada/dom"
-	ugo "github.com/metaleap/go-util"
-	ugfx "github.com/metaleap/go-util/gfx"
-	unum "github.com/metaleap/go-util/num"
 	xsdt "github.com/metaleap/go-xsd/types"
 )
 

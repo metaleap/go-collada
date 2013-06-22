@@ -4,10 +4,10 @@ import (
 	"encoding/hex"
 	"strings"
 
-	xmlx "github.com/go-forks/xmlx"
+	"github.com/go-forks/xmlx"
+	"github.com/go-utils/ustr"
 
 	cdom "github.com/go3d/go-collada/dom"
-	ustr "github.com/metaleap/go-util/str"
 	xsdt "github.com/metaleap/go-xsd/types"
 )
 

@@ -1,7 +1,7 @@
 package cdom
 
 import (
-	ugfx "github.com/metaleap/go-util/gfx"
+	"github.com/go-utils/ugfx"
 )
 
 //	Categorizes the Kind of an FxTechniqueCommon.

@@ -345,6 +345,7 @@ func xau64(xn *xmlx.Node, name string) (v uint64) {
 func xau64p(xn *xmlx.Node, name string) (p *uint64) {
 	for _, att := range xn.Attributes {
 		if att.Name.Local == name {
+			p = new(uint64)
 			*p = xau64(xn, name)
 			break
 		}

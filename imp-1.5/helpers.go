@@ -400,6 +400,9 @@ func xcns(xn *xmlx.Node, names ...string) (cns []*xmlx.Node) {
 			}
 		}
 	}
+	if len(cns) > 0 && cns[0].Parent == xn.Parent {
+		cns = cns[1:]
+	}
 	return
 }
 

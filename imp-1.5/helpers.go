@@ -3,7 +3,7 @@ package collimp
 import (
 	"strings"
 
-	xmlx "github.com/go-forks/xmlx"
+	xmlx "github.com/go-forks/go-pkg-xmlx"
 
 	"github.com/go-utils/ugfx"
 	"github.com/go-utils/ugo"

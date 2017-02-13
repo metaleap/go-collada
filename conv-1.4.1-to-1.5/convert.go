@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	xmlx "github.com/go-forks/go-pkg-xmlx"
+	xmlx "github.com/jteeuwen/go-pkg-xmlx"
 
-	"github.com/go-utils/ugo"
-	"github.com/go-utils/ustr"
+	"github.com/metaleap/go-util-misc"
+	"github.com/metaleap/go-util-str"
 )
 
 const ns = "http://www.collada.org/2005/11/COLLADASchema"

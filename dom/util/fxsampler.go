@@ -1,7 +1,7 @@
 package cdomutil
 
 import (
-	cdom "github.com/go3d/go-collada/dom"
+	cdom "github.com/metaleap/go-collada/dom"
 )
 
 //	Creates and returns a new FxSampler of cdom.FxSamplerKind2D, sampling the specified

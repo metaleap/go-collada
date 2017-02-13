@@ -3,7 +3,7 @@ package cdom
 import (
 	"fmt"
 
-	"github.com/go-utils/ugfx"
+	"github.com/metaleap/go-util-gfx"
 )
 
 var (

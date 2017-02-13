@@ -1,9 +1,9 @@
 package collimp
 
 import (
-	xmlx "github.com/go-forks/go-pkg-xmlx"
+	xmlx "github.com/jteeuwen/go-pkg-xmlx"
 
-	cdom "github.com/go3d/go-collada/dom"
+	cdom "github.com/metaleap/go-collada/dom"
 )
 
 func obj_GeometryBrepOrientation(xn *xmlx.Node, n string) (obj *cdom.GeometryBrepOrientation) {

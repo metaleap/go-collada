@@ -3,12 +3,12 @@ package collimp
 import (
 	"strings"
 
-	xmlx "github.com/go-forks/go-pkg-xmlx"
+	xmlx "github.com/jteeuwen/go-pkg-xmlx"
 
-	"github.com/go-utils/ugfx"
-	"github.com/go-utils/ugo"
-	"github.com/go-utils/unum"
-	cdom "github.com/go3d/go-collada/dom"
+	"github.com/metaleap/go-util-gfx"
+	"github.com/metaleap/go-util-misc"
+	"github.com/metaleap/go-util-num"
+	cdom "github.com/metaleap/go-collada/dom"
 	xsdt "github.com/metaleap/go-xsd/types"
 )
 

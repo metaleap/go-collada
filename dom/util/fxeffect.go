@@ -1,7 +1,7 @@
 package cdomutil
 
 import (
-	cdom "github.com/go3d/go-collada/dom"
+	cdom "github.com/metaleap/go-collada/dom"
 )
 
 //	Adds a new common profile to the specified effect definition (even if it already contains one).

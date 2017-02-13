@@ -1,6 +1,6 @@
 # collimp
 --
-    import "github.com/go3d/go-collada/imp-1.5"
+    import "github.com/metaleap/go-collada/imp-1.5"
 
 Loads assets from Collada 1.4.1 and 1.5 XML documents into the data structures
 provided by the go-collada/dom package. Note, Collada 1.4.1 documents are

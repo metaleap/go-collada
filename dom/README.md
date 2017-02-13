@@ -1,6 +1,6 @@
 # cdom
 --
-    import "github.com/go3d/go-collada/dom"
+    import "github.com/metaleap/go-collada/dom"
 
 The go-collada/dom package provides logic-less base data structures for all
 resource types used in COLLADA 1.5 or 1.4.1 documents.

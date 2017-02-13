@@ -1,10 +1,10 @@
 package collimp
 
 import (
-	xmlx "github.com/go-forks/go-pkg-xmlx"
+	xmlx "github.com/jteeuwen/go-pkg-xmlx"
 
-	c141 "github.com/go3d/go-collada/conv-1.4.1-to-1.5"
-	cdom "github.com/go3d/go-collada/dom"
+	c141 "github.com/metaleap/go-collada/conv-1.4.1-to-1.5"
+	cdom "github.com/metaleap/go-collada/dom"
 )
 
 var (

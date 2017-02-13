@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"runtime"
 
-	xmlx "github.com/go-forks/go-pkg-xmlx"
-	conv "github.com/go3d/go-collada/conv-1.4.1-to-1.5"
-	ugo "github.com/metaleap/go-util"
-	uio "github.com/metaleap/go-util/io"
+	xmlx "github.com/jteeuwen/go-pkg-xmlx"
+	conv "github.com/metaleap/go-collada/conv-1.4.1-to-1.5"
+	ugo "github.com/metaleap/go-util-misc"
+	uio "github.com/metaleap/go-util-fs"
 )
 
 const ns = "http://www.collada.org/2005/11/COLLADASchema"

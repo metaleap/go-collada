@@ -1,6 +1,6 @@
 # convert
 --
-    import "github.com/go3d/go-collada/conv-1.4.1-to-1.5"
+    import "github.com/metaleap/go-collada/conv-1.4.1-to-1.5"
 
 Provides in-memory conversion of Collada 1.4.1 documents to version 1.5.
 

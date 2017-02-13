@@ -2,7 +2,7 @@
 package pkgreflect
 
 import "reflect"
-import cdom "github.com/go3d/go-collada/dom"
+import cdom "github.com/metaleap/go-collada/dom"
 
 var Types = map[string]reflect.Type{
 	"VisualSceneDef": reflect.TypeOf((*cdom.VisualSceneDef)(nil)).Elem(),

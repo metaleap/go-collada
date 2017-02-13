@@ -8,9 +8,9 @@ import (
 	"runtime"
 	"strings"
 
-	cdr "github.com/go3d/go-collada/dom/pkgreflect"
-	uio "github.com/metaleap/go-util/io"
-	ustr "github.com/metaleap/go-util/str"
+	cdr "github.com/metaleap/go-collada/dom/pkgreflect"
+	uio "github.com/metaleap/go-util-fs"
+	ustr "github.com/metaleap/go-util-str"
 )
 
 type typeMap map[reflect.Type]bool

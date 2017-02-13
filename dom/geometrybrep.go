@@ -1,7 +1,7 @@
 package cdom
 
 import (
-	"github.com/go-utils/unum"
+	"github.com/metaleap/go-util-num"
 )
 
 //	Describes a boundary representation (B-rep) structure.

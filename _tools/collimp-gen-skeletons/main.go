@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"strings"
 
-	cdr "github.com/go3d/go-collada/dom/pkgreflect"
-	ugo "github.com/metaleap/go-util"
-	uio "github.com/metaleap/go-util/io"
+	cdr "github.com/metaleap/go-collada/dom/pkgreflect"
+	ugo "github.com/metaleap/go-util-misc"
+	uio "github.com/metaleap/go-util-fs"
 )
 
 type libMap struct {

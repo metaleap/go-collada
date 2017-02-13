@@ -1,6 +1,6 @@
 # cdomutil
 --
-    import "github.com/go3d/go-collada/dom/util"
+    import "github.com/metaleap/go-collada/dom/util"
 
 Provides utility functions encapsulating (otherwise potentially verbose)
 recurring tasks for working with the go-collada/dom package.

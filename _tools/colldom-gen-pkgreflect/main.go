@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"strings"
 
-	ugo "github.com/metaleap/go-util"
-	uio "github.com/metaleap/go-util/io"
+	ugo "github.com/metaleap/go-util-misc"
+	uio "github.com/metaleap/go-util-fs"
 )
 
 func main() {

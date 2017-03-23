@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	xmlx "github.com/jteeuwen/go-pkg-xmlx"
+	xmlx "github.com/go-forks/go-pkg-xmlx"
 	conv "github.com/metaleap/go-collada/conv-1.4.1-to-1.5"
 	ugo "github.com/metaleap/go-util-misc"
 	uio "github.com/metaleap/go-util-fs"

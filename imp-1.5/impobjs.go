@@ -1,7 +1,7 @@
 package collimp
 
 import (
-	xmlx "github.com/jteeuwen/go-pkg-xmlx"
+	xmlx "github.com/go-forks/go-pkg-xmlx"
 
 	cdom "github.com/metaleap/go-collada/dom"
 )

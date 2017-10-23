@@ -5,10 +5,10 @@ import (
 
 	xmlx "github.com/go-forks/go-pkg-xmlx"
 
-	"github.com/metaleap/go-util-gfx"
-	"github.com/metaleap/go-util-misc"
-	"github.com/metaleap/go-util-num"
 	cdom "github.com/metaleap/go-collada/dom"
+	"github.com/metaleap/go-util"
+	"github.com/metaleap/go-util/gfx"
+	"github.com/metaleap/go-util/num"
 	xsdt "github.com/metaleap/go-xsd/types"
 )
 
@@ -503,7 +503,7 @@ func xv(xn *xmlx.Node) (val interface{}) {
 				if l := xau64(xn, "length"); (l > 0) && (len(xn.Children) > 0) {
 					sl := make([]interface{}, l)
 					for i := 0; i < int(l); i++ {
-						sl[i] = xv(xn.Children[ugo.Ifi(i >= len(xn.Children), 0, i)])
+						sl[i] = xv(xn.Children[umisc.IfI(i >= len(xn.Children), 0, i)])
 					}
 					val = sl
 				}

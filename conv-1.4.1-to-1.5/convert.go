@@ -9,8 +9,8 @@ import (
 
 	xmlx "github.com/go-forks/go-pkg-xmlx"
 
-	"github.com/metaleap/go-util-misc"
-	"github.com/metaleap/go-util-str"
+	"github.com/metaleap/go-util"
+	"github.com/metaleap/go-util/str"
 )
 
 const ns = "http://www.collada.org/2005/11/COLLADASchema"
@@ -512,7 +512,7 @@ func subNodes(xn *xmlx.Node, name string) (sn []*xmlx.Node) {
 
 func processNode(xn *xmlx.Node) {
 	if (!Force) && (xn.Name.Local == "COLLADA") {
-		if _, ver := ugo.ParseVersion(attVal(xn, "version")); ver >= 1.5 {
+		if _, ver := umisc.ParseVersion(attVal(xn, "version")); ver >= 1.5 {
 			skipped = true
 			return
 		}

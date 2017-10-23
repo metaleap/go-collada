@@ -1,7 +1,7 @@
 package cdom
 
 import (
-	"github.com/metaleap/go-util-num"
+	"github.com/metaleap/go-util/num"
 )
 
 //	Declares a cylinder primitive that is centered around its local origin

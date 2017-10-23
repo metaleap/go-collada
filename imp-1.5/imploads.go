@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/go-forks/go-pkg-xmlx"
-	"github.com/metaleap/go-util-str"
+	"github.com/metaleap/go-util/str"
 
 	cdom "github.com/metaleap/go-collada/dom"
 	xsdt "github.com/metaleap/go-xsd/types"

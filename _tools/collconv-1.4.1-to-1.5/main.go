@@ -9,8 +9,8 @@ import (
 
 	xmlx "github.com/go-forks/go-pkg-xmlx"
 	conv "github.com/metaleap/go-collada/conv-1.4.1-to-1.5"
-	ugo "github.com/metaleap/go-util-misc"
-	uio "github.com/metaleap/go-util-fs"
+	"github.com/metaleap/go-util/fs"
+	"github.com/metaleap/go-util/sys"
 )
 
 const ns = "http://www.collada.org/2005/11/COLLADASchema"
@@ -22,7 +22,7 @@ func convert(srcFilePath, dstFilePath string) {
 		outFile *os.File
 	)
 	log.Printf("SRC: %s\n", srcFilePath)
-	data = uio.ReadBinaryFile(srcFilePath, true)
+	data = ufs.ReadBinaryFile(srcFilePath, true)
 	if outFile, err = os.Create(dstFilePath); err != nil {
 		panic(err)
 	}
@@ -46,8 +46,8 @@ func main() {
 		convert(*flagSrcFilePath, *flagDstFilePath)
 	} else {
 		const dbp = "Dropbox/oga/collada"
-		for _, baseDirPath := range []string{filepath.Join("Q:", dbp), filepath.Join(ugo.UserHomeDirPath(), dbp)} {
-			if uio.DirExists(baseDirPath) {
+		for _, baseDirPath := range []string{filepath.Join("Q:", dbp), filepath.Join(usys.UserHomeDirPath(), dbp)} {
+			if ufs.DirExists(baseDirPath) {
 				for _, subDirName := range []string{"cube-poly", "cube-tris", "duck-poly", "duck-tris", "mgmidget", "bikexsi", "diningroom", "berlin", "sponza"} {
 					convert(filepath.Join(baseDirPath, subDirName, "obj.dae"), filepath.Join(baseDirPath, subDirName, "obj15.dae"))
 				}

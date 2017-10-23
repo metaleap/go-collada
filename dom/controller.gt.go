@@ -1,7 +1,7 @@
 package cdom
 
 import (
-	"github.com/metaleap/go-util-num"
+	"github.com/metaleap/go-util/num"
 )
 
 //	Used to declare skinning joints or morph targets.

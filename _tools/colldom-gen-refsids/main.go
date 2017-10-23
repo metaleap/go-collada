@@ -9,8 +9,8 @@ import (
 	"strings"
 
 	cdr "github.com/metaleap/go-collada/dom/pkgreflect"
-	uio "github.com/metaleap/go-util-fs"
-	ustr "github.com/metaleap/go-util-str"
+	"github.com/metaleap/go-util/fs"
+	"github.com/metaleap/go-util/str"
 )
 
 type typeMap map[reflect.Type]bool
@@ -302,5 +302,5 @@ func main() {
 			outSrc += writeAccessorMethods(rt)
 		}
 	}
-	uio.WriteTextFile(outFilePath, outSrc[:len(outSrc)-1]+"\n")
+	ufs.WriteTextFile(outFilePath, outSrc[:len(outSrc)-1]+"\n")
 }

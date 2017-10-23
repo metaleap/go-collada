@@ -1,7 +1,7 @@
 package cdom
 
 import (
-	"github.com/metaleap/go-util-gfx"
+	"github.com/metaleap/go-util/gfx"
 )
 
 //	Categorizes the kinds of wrapping used in FxSamplerWrapping.

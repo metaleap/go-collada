@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	cdr "github.com/metaleap/go-collada/dom/pkgreflect"
-	ugo "github.com/metaleap/go-util-misc"
-	uio "github.com/metaleap/go-util-fs"
+	"github.com/metaleap/go-util/dev/go"
+	"github.com/metaleap/go-util/fs"
 )
 
 type libMap struct {
@@ -17,7 +17,7 @@ type libMap struct {
 }
 
 var (
-	outDirPath = flag.String("dst", ugo.GopathSrcGithub("go3d", "go-collada", "imp-1.5"), "out dir path")
+	outDirPath = flag.String("dst", udevgo.GopathSrcGithub("go3d", "go-collada", "imp-1.5"), "out dir path")
 	libs       = []libMap{
 		libMap{"animation_clips", "animation_clip", "AnimationClip"},
 		libMap{"animations", "animation", "Animation"},
@@ -154,8 +154,8 @@ func load_%s(xn *xmlx.Node, obj *cdom.%s) {
 		srcLibs += fmt.Sprintf("\tlibs_%s(xn)\n", lm.xnPlural)
 	}
 	srcLibs += "}\n"
-	uio.WriteTextFile(filepath.Join(*outDirPath, "-skel-libs.txt"), srcLibs)
-	uio.WriteTextFile(filepath.Join(*outDirPath, "-skel-inits.txt"), srcInits)
-	uio.WriteTextFile(filepath.Join(*outDirPath, "-skel-objs.txt"), srcObjs)
-	uio.WriteTextFile(filepath.Join(*outDirPath, "-skel-loads.txt"), srcLoads)
+	ufs.WriteTextFile(filepath.Join(*outDirPath, "-skel-libs.txt"), srcLibs)
+	ufs.WriteTextFile(filepath.Join(*outDirPath, "-skel-inits.txt"), srcInits)
+	ufs.WriteTextFile(filepath.Join(*outDirPath, "-skel-objs.txt"), srcObjs)
+	ufs.WriteTextFile(filepath.Join(*outDirPath, "-skel-loads.txt"), srcLoads)
 }

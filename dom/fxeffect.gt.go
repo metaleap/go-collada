@@ -1,7 +1,7 @@
 package cdom
 
 import (
-	"github.com/metaleap/go-util-gfx"
+	"github.com/metaleap/go-util/gfx"
 )
 
 //	Categorizes the Kind of an FxTechniqueCommon.
